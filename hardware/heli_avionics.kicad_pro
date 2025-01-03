@@ -386,6 +386,10 @@
     [
       "c384ea46-0dfb-4673-b2f4-1f88fafbcaa5",
       "Root"
+    ],
+    [
+      "e66d27d0-3506-42a3-bb0e-923c7c751e41",
+      "Motor Drivers"
     ]
   ],
   "text_variables": {}
