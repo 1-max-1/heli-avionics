@@ -225,7 +225,7 @@
 				)
 			)
 			(pin input clock
-				(at -20.32 0 0)
+				(at -20.32 -5.08 0)
 				(length 5.08)
 				(name "SCK/SCL"
 					(effects
@@ -279,7 +279,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -20.32 -5.08 0)
+				(at -20.32 0 0)
 				(length 5.08)
 				(name "SDO/DNC/SA0"
 					(effects
