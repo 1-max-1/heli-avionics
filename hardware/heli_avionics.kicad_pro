@@ -394,6 +394,10 @@
     [
       "0b31be65-dd8f-4cfe-9626-c0e264a9ba4c",
       "Radio"
+    ],
+    [
+      "f8f87cfe-571f-4a92-acee-79776e4ce004",
+      "Power circuits"
     ]
   ],
   "text_variables": {}
