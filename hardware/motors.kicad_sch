@@ -1464,6 +1464,27 @@
 		)
 		(uuid "39f807a0-adab-45ef-a2bd-4906554132bc")
 	)
+	(text "Bulk capacitance calculated with C_{bulk} >  3 * ∆I_{motor} / f_{PWM} / ∆V_{supply}\nUsing f_{PWM} = 32 kHz, ∆V_{supply} = 0.05V\nBig motors:  ∆I_{motor} = 0.04A\nSmall motor: ∆I_{motor} = 0.02A\nWith a bit of safety margin included"
+		(exclude_from_sim no)
+		(at 77.978 32.258 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "753f3436-0d1a-4f74-9902-77cc4a43c626")
+	)
+	(text "From https://www.ti.com/lit/an/slvaft0/slvaft0.pdf"
+		(exclude_from_sim no)
+		(at 100.584 42.672 0)
+		(effects
+			(font
+				(size 1.143 1.143)
+			)
+		)
+		(uuid "7af07dd5-6b55-4f57-b5c4-47e676357d49")
+	)
 	(text "Main propellers"
 		(exclude_from_sim no)
 		(at 179.578 124.968 0)
@@ -1758,7 +1779,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "560uF"
+		(property "Value" "270uF"
 			(at 127 81.6609 0)
 			(effects
 				(font
@@ -2093,7 +2114,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1000uF"
+		(property "Value" "680uF"
 			(at 242.57 75.3109 0)
 			(effects
 				(font
@@ -2492,7 +2513,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1000uF"
+		(property "Value" "680uF"
 			(at 230.378 83.82 0)
 			(effects
 				(font
