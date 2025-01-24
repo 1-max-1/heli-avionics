@@ -2706,7 +2706,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm"
+		(property "Footprint" "heli-footprints:NRF24L01_HandSolder_SpecialPad"
 			(at 138.43 80.01 0)
 			(effects
 				(font
