@@ -2044,7 +2044,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x02"
+		(property "Value" "JST_XH_01x02"
 			(at 214.63 99.0599 0)
 			(effects
 				(font
@@ -2053,7 +2053,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 212.09 96.52 0)
 			(effects
 				(font
@@ -2962,7 +2962,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x02"
+		(property "Value" "JST_XH_01x02"
 			(at 214.63 118.1099 0)
 			(effects
 				(font
@@ -2971,7 +2971,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 212.09 115.57 0)
 			(effects
 				(font
@@ -3097,7 +3097,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x02"
+		(property "Value" "JST_PH_01x02"
 			(at 110.49 107.9499 0)
 			(effects
 				(font
@@ -3106,7 +3106,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 			(at 107.95 105.41 0)
 			(effects
 				(font

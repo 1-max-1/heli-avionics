@@ -1927,7 +1927,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x03"
+		(property "Value" "JST_PH_01x03"
 			(at 134.366 50.8 0)
 			(effects
 				(font
@@ -1936,7 +1936,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical"
 			(at 135.89 58.42 0)
 			(effects
 				(font
@@ -2831,7 +2831,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Wire:SolderWire-1sqmm_1x02_P7.8mm_D1.4mm_OD3.9mm"
 			(at 54.61 80.01 0)
 			(effects
 				(font

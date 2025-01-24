@@ -1,4 +1,4 @@
 (fp_lib_table
   (version 7)
-  (lib (name "heli-footprints")(type "KiCad")(uri "${KIPRJMOD}/heli-footprints")(options "")(descr ""))
+  (lib (name "heli-footprints")(type "KiCad")(uri "${KIPRJMOD}/heli-footprints")(options "")(descr "Custom/modified footprints for this heli avionics project"))
 )
