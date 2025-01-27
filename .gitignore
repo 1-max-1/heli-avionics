@@ -21,5 +21,5 @@ hardware/**/*-save.pro
 hardware/**/*-save.kicad_hardware
 hardware/**/fp-info-cache
 hardware/**/*.kicad_sch.lck
-hardware/**/*.kicad_hardware.lck
+hardware/**/*.kicad_pcb.lck
 hardware/**/#auto_saved_files#

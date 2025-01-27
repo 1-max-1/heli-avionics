@@ -4729,7 +4729,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK"
 			(at 34.29 59.69 0)
 			(effects
 				(font
