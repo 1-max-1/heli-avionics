@@ -2487,6 +2487,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 71.12) (xy 161.29 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af640590-7038-4adb-8d09-2ec88505a991")
+	)
+	(wire
+		(pts
 			(xy 67.31 133.35) (xy 77.47 133.35)
 		)
 		(stroke
@@ -2504,16 +2514,6 @@
 			(type default)
 		)
 		(uuid "bafdf6df-bd1e-45e9-b572-cd226dcf835b")
-	)
-	(wire
-		(pts
-			(xy 161.29 71.12) (xy 161.29 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd320398-00e3-4202-8724-376663cb5ca0")
 	)
 	(wire
 		(pts
@@ -3233,16 +3233,16 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 156.21 71.12 180)
+		(at 156.21 68.58 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "04158ece-7a02-4460-8a47-621e02e2398c")
 		(property "Reference" "J7"
-			(at 156.21 62.23 0)
+			(at 156.21 62.738 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3250,7 +3250,7 @@
 			)
 		)
 		(property "Value" "JST_ZH_01x02"
-			(at 156.21 64.77 0)
+			(at 155.956 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3258,7 +3258,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_ZH_B2B-ZR_1x02_P1.50mm_Vertical"
-			(at 156.21 71.12 0)
+			(at 156.21 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3267,7 +3267,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 156.21 71.12 0)
+			(at 156.21 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3276,7 +3276,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 156.21 71.12 0)
+			(at 156.21 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
