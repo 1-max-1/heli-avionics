@@ -2340,6 +2340,17 @@
 		)
 		(uuid "febbdf9d-7c62-49a2-8312-7f3eb126d150")
 	)
+	(text "Appnote recommends these 2,\nbut the bogatin book recommends only using 3 22uF caps."
+		(exclude_from_sim no)
+		(at 101.346 64.008 0)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify left)
+		)
+		(uuid "733042f9-d729-4b35-8b38-4a1cba86a5bf")
+	)
 	(text "Sort these values out\nAlso maybe choose another better crystal"
 		(exclude_from_sim no)
 		(at 183.388 135.89 0)
@@ -2507,7 +2518,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "22uF"
 			(at 76.2 74.9299 0)
 			(effects
 				(font
@@ -2643,7 +2654,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "22uF"
 			(at 90.17 74.9299 0)
 			(effects
 				(font
@@ -2701,7 +2712,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "343fa32f-4bfb-4c95-a1b0-6fac242a287d")
 		(property "Reference" "C8"
@@ -3382,7 +3393,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "22uF"
 			(at 64.77 74.9299 0)
 			(effects
 				(font
@@ -4532,7 +4543,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "cf305f86-bf6f-4808-aaef-7883fed9113a")
 		(property "Reference" "C27"

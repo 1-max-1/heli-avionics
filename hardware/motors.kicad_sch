@@ -1019,40 +1019,16 @@
 		)
 	)
 	(junction
-		(at 231.14 71.12)
+		(at 259.08 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1ad3444b-ddd0-4faa-9a42-e1940a7a69c3")
+		(uuid "29f03a12-b9a9-40c9-93b5-165889d0eb44")
 	)
 	(junction
-		(at 224.79 71.12)
+		(at 259.08 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7473e7b8-8ab8-45ee-8b81-f414b07328fd")
-	)
-	(junction
-		(at 119.38 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c875e35d-f4b6-4b84-a7ea-8dd3a8614a59")
-	)
-	(junction
-		(at 231.14 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cb0dd2ff-d8f9-4d25-bf2f-b26bdedf87a6")
-	)
-	(junction
-		(at 119.38 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d0715305-bdee-49d1-a283-8feb6806cd27")
-	)
-	(junction
-		(at 224.79 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e90999dd-eb0f-446f-a254-6ee5b89a5005")
+		(uuid "51d6fb57-8a64-4596-8498-bbcdf9bcb240")
 	)
 	(wire
 		(pts
@@ -1066,7 +1042,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 99.06) (xy 102.87 105.41)
+			(xy 90.17 100.33) (xy 90.17 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1076,7 +1052,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 114.3) (xy 102.87 107.95)
+			(xy 90.17 115.57) (xy 90.17 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1086,7 +1062,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 90.17) (xy 93.98 92.71)
+			(xy 81.28 91.44) (xy 81.28 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1096,7 +1072,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 92.71) (xy 88.9 92.71)
+			(xy 81.28 93.98) (xy 76.2 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1116,7 +1092,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 68.58) (xy 224.79 71.12)
+			(xy 259.08 105.41) (xy 259.08 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1126,7 +1102,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 104.14) (xy 76.2 104.14)
+			(xy 66.04 105.41) (xy 63.5 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1146,17 +1122,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 77.47) (xy 119.38 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3aef8ede-98cf-4966-bf54-14ddd599efe0")
-	)
-	(wire
-		(pts
-			(xy 231.14 71.12) (xy 238.76 71.12)
+			(xy 255.27 109.22) (xy 259.08 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1166,7 +1132,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 109.22) (xy 78.74 109.22)
+			(xy 58.42 110.49) (xy 66.04 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1176,7 +1142,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 99.06) (xy 102.87 99.06)
+			(xy 86.36 100.33) (xy 90.17 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1196,7 +1162,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 81.28) (xy 224.79 78.74)
+			(xy 259.08 119.38) (xy 259.08 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1206,7 +1172,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 104.14) (xy 76.2 113.03)
+			(xy 63.5 105.41) (xy 63.5 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1236,17 +1202,27 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 78.74) (xy 238.76 78.74)
+			(xy 259.08 116.84) (xy 262.89 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7d7fcfc6-12a8-45fa-aa80-0fc69ab54bf0")
+		(uuid "80d5b968-d9a1-4fb8-86cc-c18a958ff1f8")
 	)
 	(wire
 		(pts
-			(xy 224.79 78.74) (xy 231.14 78.74)
+			(xy 259.08 109.22) (xy 262.89 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8119e7c0-3f68-4f4c-bae4-a87f9fbb60f9")
+	)
+	(wire
+		(pts
+			(xy 259.08 116.84) (xy 255.27 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1256,7 +1232,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 114.3) (xy 102.87 114.3)
+			(xy 86.36 115.57) (xy 90.17 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1276,43 +1252,13 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 85.09) (xy 123.19 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89e721a3-e579-4779-96bb-8f54b7bde58d")
-	)
-	(wire
-		(pts
-			(xy 224.79 71.12) (xy 231.14 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c3fe697-5ff1-43d0-9b93-5731d5d37b99")
-	)
-	(wire
-		(pts
-			(xy 71.12 106.68) (xy 78.74 106.68)
+			(xy 58.42 107.95) (xy 66.04 107.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "8d400b30-6686-4b43-8125-f0b6cfb1c588")
-	)
-	(wire
-		(pts
-			(xy 119.38 77.47) (xy 123.19 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a2b2ed20-f077-4b3d-b0de-a620cdb9ebbe")
 	)
 	(wire
 		(pts
@@ -1336,17 +1282,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 71.12) (xy 224.79 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad358c75-3933-4290-96b0-7154f9baa77e")
-	)
-	(wire
-		(pts
-			(xy 119.38 74.93) (xy 119.38 77.47)
+			(xy 113.03 118.11) (xy 113.03 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1376,33 +1312,13 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 87.63) (xy 119.38 85.09)
+			(xy 113.03 128.27) (xy 113.03 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c4d22cbe-8293-4912-9863-285dbe7c23b6")
-	)
-	(wire
-		(pts
-			(xy 119.38 85.09) (xy 115.57 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dcdaab90-c086-4e92-ac82-8e159c2b20de")
-	)
-	(wire
-		(pts
-			(xy 224.79 78.74) (xy 220.98 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3ed1a67-ef4f-4fee-bb37-72c78a3a2b6c")
 	)
 	(wire
 		(pts
@@ -1416,7 +1332,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 119.38) (xy 88.9 124.46)
+			(xy 76.2 120.65) (xy 76.2 125.73)
 		)
 		(stroke
 			(width 0)
@@ -1426,7 +1342,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 92.71) (xy 88.9 93.98)
+			(xy 76.2 93.98) (xy 76.2 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1436,7 +1352,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 90.17) (xy 86.36 93.98)
+			(xy 73.66 91.44) (xy 73.66 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1456,10 +1372,10 @@
 	)
 	(text "Rear propeller"
 		(exclude_from_sim no)
-		(at 69.596 125.984 0)
+		(at 56.896 127.254 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.651 1.651)
 			)
 		)
 		(uuid "39f807a0-adab-45ef-a2bd-4906554132bc")
@@ -1485,15 +1401,35 @@
 		)
 		(uuid "7af07dd5-6b55-4f57-b5c4-47e676357d49")
 	)
+	(text "Bulk capacitance for motor"
+		(exclude_from_sim no)
+		(at 122.174 127.762 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+		)
+		(uuid "b45f4f95-3808-4910-9340-b6b204214929")
+	)
 	(text "Main propellers"
 		(exclude_from_sim no)
 		(at 179.578 124.968 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.651 1.651)
 			)
 		)
 		(uuid "f026c220-4fb5-460b-9120-e5a818a69e8b")
+	)
+	(text "Bulk capacitance for motor"
+		(exclude_from_sim no)
+		(at 245.11 105.664 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+		)
+		(uuid "f5495eea-1508-4607-baf4-c9e4485029ef")
 	)
 	(hierarchical_label "MAIN_PROPS_MODE"
 		(shape input)
@@ -1533,7 +1469,7 @@
 	)
 	(hierarchical_label "REAR_PROP_PWM1"
 		(shape input)
-		(at 71.12 106.68 180)
+		(at 58.42 107.95 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1545,7 +1481,7 @@
 	)
 	(hierarchical_label "REAR_PROP_PWM2"
 		(shape input)
-		(at 71.12 109.22 180)
+		(at 58.42 110.49 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1557,7 +1493,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 88.9 124.46 0)
+		(at 76.2 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1566,7 +1502,7 @@
 		(fields_autoplaced yes)
 		(uuid "010cfd76-56dd-4a81-9172-ed5cc70f0ceb")
 		(property "Reference" "#PWR024"
-			(at 88.9 130.81 0)
+			(at 76.2 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1575,7 +1511,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 88.9 129.54 0)
+			(at 76.2 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1583,7 +1519,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 124.46 0)
+			(at 76.2 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1592,7 +1528,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 124.46 0)
+			(at 76.2 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1601,7 +1537,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 88.9 124.46 0)
+			(at 76.2 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1616,76 +1552,6 @@
 			(project "heli_avionics"
 				(path "/c384ea46-0dfb-4673-b2f4-1f88fafbcaa5/e66d27d0-3506-42a3-bb0e-923c7c751e41"
 					(reference "#PWR024")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 220.98 74.93 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "017e1b1c-c1c6-4592-9e9c-a5ee99e3b4de")
-		(property "Reference" "C18"
-			(at 217.424 74.676 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 217.424 77.216 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 220.0148 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 220.98 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 220.98 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0d78bce1-27f6-4c32-93bc-facb9df3da8a")
-		)
-		(pin "1"
-			(uuid "887a35b0-6831-4e7d-9a35-e28018a76ccc")
-		)
-		(instances
-			(project "heli_avionics"
-				(path "/c384ea46-0dfb-4673-b2f4-1f88fafbcaa5/e66d27d0-3506-42a3-bb0e-923c7c751e41"
-					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -1709,7 +1575,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "22uF"
 			(at 168.656 88.646 0)
 			(effects
 				(font
@@ -1761,8 +1627,138 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+BATT")
+		(at 95.25 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "09c69085-6ea6-4311-85a4-984402b8312c")
+		(property "Reference" "#PWR063"
+			(at 95.25 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+BATT"
+			(at 95.25 79.756 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 95.25 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a56e3e7f-b7b3-493b-9d9a-bf363b082904")
+		)
+		(instances
+			(project "heli_avionics"
+				(path "/c384ea46-0dfb-4673-b2f4-1f88fafbcaa5/e66d27d0-3506-42a3-bb0e-923c7c751e41"
+					(reference "#PWR063")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 95.25 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1d507b38-9fd4-4c82-9e6e-8955d2af0714")
+		(property "Reference" "#PWR064"
+			(at 95.25 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 95.25 95.758 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 95.25 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a0dbac9f-673c-4eb7-8e15-2421717569ff")
+		)
+		(instances
+			(project "heli_avionics"
+				(path "/c384ea46-0dfb-4673-b2f4-1f88fafbcaa5/e66d27d0-3506-42a3-bb0e-923c7c751e41"
+					(reference "#PWR064")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 123.19 81.28 0)
+		(at 113.03 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1771,7 +1767,7 @@
 		(fields_autoplaced yes)
 		(uuid "32cca481-3e8a-405c-a772-aaca28386f45")
 		(property "Reference" "C23"
-			(at 127 79.1209 0)
+			(at 116.84 121.0309 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1780,7 +1776,7 @@
 			)
 		)
 		(property "Value" "270uF"
-			(at 127 81.6609 0)
+			(at 116.84 123.5709 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1789,7 +1785,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
-			(at 124.1552 85.09 0)
+			(at 113.9952 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1798,7 +1794,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 123.19 81.28 0)
+			(at 113.03 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1807,7 +1803,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 123.19 81.28 0)
+			(at 113.03 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1832,7 +1828,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 119.38 87.63 0)
+		(at 113.03 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1840,7 +1836,7 @@
 		(dnp no)
 		(uuid "3a4d0810-6e41-407e-a1aa-d8090e824484")
 		(property "Reference" "#PWR026"
-			(at 119.38 93.98 0)
+			(at 113.03 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1849,7 +1845,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 119.38 91.948 0)
+			(at 113.03 132.588 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1857,7 +1853,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 119.38 87.63 0)
+			(at 113.03 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1866,7 +1862,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 87.63 0)
+			(at 113.03 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1875,7 +1871,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 119.38 87.63 0)
+			(at 113.03 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1897,7 +1893,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 224.79 68.58 0)
+		(at 259.08 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1905,7 +1901,7 @@
 		(dnp no)
 		(uuid "3dcd370a-5c20-40d9-b654-66f4f64f999d")
 		(property "Reference" "#PWR031"
-			(at 224.79 72.39 0)
+			(at 259.08 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1914,7 +1910,7 @@
 			)
 		)
 		(property "Value" "+BATT"
-			(at 224.79 64.516 0)
+			(at 259.08 101.346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1922,7 +1918,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 224.79 68.58 0)
+			(at 259.08 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1931,7 +1927,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 224.79 68.58 0)
+			(at 259.08 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1940,7 +1936,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 224.79 68.58 0)
+			(at 259.08 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1962,7 +1958,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 73.66 92.71 0)
+		(at 60.96 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1970,7 +1966,7 @@
 		(dnp no)
 		(uuid "408605e2-0f26-47b0-8e71-6ad7621a8555")
 		(property "Reference" "#PWR023"
-			(at 73.66 99.06 0)
+			(at 60.96 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1979,7 +1975,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 73.66 97.028 0)
+			(at 60.96 95.758 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1987,7 +1983,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 92.71 0)
+			(at 60.96 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1996,7 +1992,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 92.71 0)
+			(at 60.96 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2005,7 +2001,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 73.66 92.71 0)
+			(at 60.96 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2020,6 +2016,75 @@
 			(project "heli_avionics"
 				(path "/c384ea46-0dfb-4673-b2f4-1f88fafbcaa5/e66d27d0-3506-42a3-bb0e-923c7c751e41"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 208.28 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4556c095-5973-425e-a52c-8964476571cd")
+		(property "Reference" "C18"
+			(at 211.836 79.756 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 211.836 82.296 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 209.2452 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 208.28 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5932c787-7de6-4319-a3e2-ccf80185aac3")
+		)
+		(pin "1"
+			(uuid "a9d6cbe4-2f36-4718-9ef5-dd6734af2e82")
+		)
+		(instances
+			(project "heli_avionics"
+				(path "/c384ea46-0dfb-4673-b2f4-1f88fafbcaa5/e66d27d0-3506-42a3-bb0e-923c7c751e41"
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -2097,7 +2162,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 238.76 74.93 0)
+		(at 262.89 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2106,7 +2171,7 @@
 		(fields_autoplaced yes)
 		(uuid "711ee46b-6b9e-4c0e-8f13-a4d373a3349f")
 		(property "Reference" "C25"
-			(at 242.57 72.7709 0)
+			(at 266.7 110.8709 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2115,7 +2180,7 @@
 			)
 		)
 		(property "Value" "680uF"
-			(at 242.57 75.3109 0)
+			(at 266.7 113.4109 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2124,7 +2189,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D7.5mm_P2.50mm"
-			(at 239.7252 78.74 0)
+			(at 263.8552 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2133,7 +2198,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 238.76 74.93 0)
+			(at 262.89 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2142,7 +2207,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 238.76 74.93 0)
+			(at 262.89 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2231,8 +2296,74 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+BATT")
+		(at 208.28 76.2 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "76c9c0a0-4e33-4ad7-b677-bbf5cd625cc8")
+		(property "Reference" "#PWR065"
+			(at 208.28 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+BATT"
+			(at 208.28 72.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 208.28 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 208.28 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5723eae3-8555-44f9-81d3-98ae1ca0b463")
+		)
+		(instances
+			(project "heli_avionics"
+				(path "/c384ea46-0dfb-4673-b2f4-1f88fafbcaa5/e66d27d0-3506-42a3-bb0e-923c7c751e41"
+					(reference "#PWR065")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
-		(at 73.66 88.9 0)
+		(at 60.96 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2240,7 +2371,7 @@
 		(dnp no)
 		(uuid "7b27a8eb-b674-47fc-bea2-10a6d2ace11a")
 		(property "Reference" "C15"
-			(at 66.802 87.884 0)
+			(at 54.102 86.614 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2248,8 +2379,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
-			(at 64.516 89.916 0)
+		(property "Value" "22uF"
+			(at 51.816 88.646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2258,7 +2389,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 74.6252 92.71 0)
+			(at 61.9252 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2267,7 +2398,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 73.66 88.9 0)
+			(at 60.96 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2276,7 +2407,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 73.66 88.9 0)
+			(at 60.96 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2366,7 +2497,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 73.66 85.09 0)
+		(at 60.96 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2374,7 +2505,7 @@
 		(dnp no)
 		(uuid "7f3e3925-27ab-4ce1-83ce-188e6e01222c")
 		(property "Reference" "#PWR022"
-			(at 73.66 88.9 0)
+			(at 60.96 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2383,7 +2514,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 73.66 81.28 0)
+			(at 60.96 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2391,7 +2522,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 85.09 0)
+			(at 60.96 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2400,7 +2531,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 85.09 0)
+			(at 60.96 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2409,7 +2540,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 73.66 85.09 0)
+			(at 60.96 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2431,7 +2562,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 76.2 113.03 0)
+		(at 63.5 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2440,7 +2571,7 @@
 		(fields_autoplaced yes)
 		(uuid "8baba625-f1f6-4b4e-bbb2-7dc69c41a9ce")
 		(property "Reference" "#PWR021"
-			(at 76.2 119.38 0)
+			(at 63.5 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2449,7 +2580,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 76.2 118.11 0)
+			(at 63.5 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2457,7 +2588,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 113.03 0)
+			(at 63.5 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2466,7 +2597,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 113.03 0)
+			(at 63.5 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2475,7 +2606,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 76.2 113.03 0)
+			(at 63.5 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2497,7 +2628,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 231.14 74.93 0)
+		(at 255.27 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2505,7 +2636,7 @@
 		(dnp no)
 		(uuid "911a157f-e3d6-4514-8b29-ce23f6ccdf7c")
 		(property "Reference" "C24"
-			(at 230.378 81.28 0)
+			(at 247.396 111.252 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2514,7 +2645,7 @@
 			)
 		)
 		(property "Value" "680uF"
-			(at 230.378 83.82 0)
+			(at 245.364 113.792 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2523,7 +2654,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D7.5mm_P2.50mm"
-			(at 232.1052 78.74 0)
+			(at 256.2352 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2532,7 +2663,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 231.14 74.93 0)
+			(at 255.27 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2541,7 +2672,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 231.14 74.93 0)
+			(at 255.27 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2566,7 +2697,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 119.38 74.93 0)
+		(at 113.03 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2574,7 +2705,7 @@
 		(dnp no)
 		(uuid "9725bccc-d8b0-4aba-b227-98a100f6b338")
 		(property "Reference" "#PWR025"
-			(at 119.38 78.74 0)
+			(at 113.03 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2583,7 +2714,7 @@
 			)
 		)
 		(property "Value" "+BATT"
-			(at 119.38 70.866 0)
+			(at 113.03 114.046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2591,7 +2722,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 119.38 74.93 0)
+			(at 113.03 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2600,7 +2731,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 74.93 0)
+			(at 113.03 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2609,7 +2740,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 119.38 74.93 0)
+			(at 113.03 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2624,6 +2755,75 @@
 			(project "heli_avionics"
 				(path "/c384ea46-0dfb-4673-b2f4-1f88fafbcaa5/e66d27d0-3506-42a3-bb0e-923c7c751e41"
 					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 95.25 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9df7ee58-dfe5-470f-b061-1a33610837ab")
+		(property "Reference" "C16"
+			(at 98.806 87.376 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 98.806 89.916 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 96.2152 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 95.25 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cd72faaf-8969-41d9-beaf-33965c717cfe")
+		)
+		(pin "1"
+			(uuid "52e23e11-1f2a-440a-97c3-de8ffd3ae304")
+		)
+		(instances
+			(project "heli_avionics"
+				(path "/c384ea46-0dfb-4673-b2f4-1f88fafbcaa5/e66d27d0-3506-42a3-bb0e-923c7c751e41"
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -2697,7 +2897,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 224.79 81.28 0)
+		(at 259.08 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2705,7 +2905,7 @@
 		(dnp no)
 		(uuid "abe91a09-f345-400c-9f04-e1a245040ed3")
 		(property "Reference" "#PWR032"
-			(at 224.79 87.63 0)
+			(at 259.08 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2714,7 +2914,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 224.79 85.598 0)
+			(at 259.08 123.698 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2722,7 +2922,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 224.79 81.28 0)
+			(at 259.08 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2731,7 +2931,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 224.79 81.28 0)
+			(at 259.08 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2740,7 +2940,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 224.79 81.28 0)
+			(at 259.08 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2854,7 +3054,7 @@
 	(symbol
 		(lib_name "DRV8212_1")
 		(lib_id "heli_symbols:DRV8212")
-		(at 88.9 106.68 0)
+		(at 76.2 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2863,7 +3063,7 @@
 		(fields_autoplaced yes)
 		(uuid "baf203ff-d295-4d6b-bfa5-0357325f3e34")
 		(property "Reference" "U3"
-			(at 91.0941 119.38 0)
+			(at 78.3941 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2872,7 +3072,7 @@
 			)
 		)
 		(property "Value" "DRV8212"
-			(at 91.0941 121.92 0)
+			(at 78.3941 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2881,7 +3081,7 @@
 			)
 		)
 		(property "Footprint" "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm_ThermalVias"
-			(at 88.9 128.27 0)
+			(at 76.2 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2890,7 +3090,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/drv8212.pdf"
-			(at 87.376 123.952 0)
+			(at 74.676 125.222 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2899,7 +3099,7 @@
 			)
 		)
 		(property "Description" "H-Bridge driver, 4A, Low Voltage, PWM input, Half Bridge Mode, Low-Power Sleep Mode, WSON-8"
-			(at 87.884 89.408 0)
+			(at 75.184 90.678 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3015,7 +3215,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 86.36 90.17 0)
+		(at 73.66 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3023,7 +3223,7 @@
 		(dnp no)
 		(uuid "bc0b53d9-6570-4859-b886-1343e1b4cfb8")
 		(property "Reference" "#PWR039"
-			(at 86.36 93.98 0)
+			(at 73.66 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3032,7 +3232,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 86.36 86.36 0)
+			(at 73.66 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3040,7 +3240,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 90.17 0)
+			(at 73.66 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3049,7 +3249,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 90.17 0)
+			(at 73.66 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3058,7 +3258,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 86.36 90.17 0)
+			(at 73.66 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3080,7 +3280,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 107.95 107.95 0)
+		(at 95.25 109.22 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3089,7 +3289,7 @@
 		(dnp no)
 		(uuid "c88a426e-9778-43cb-9fd3-8912d2633ab2")
 		(property "Reference" "J2"
-			(at 110.49 107.9501 0)
+			(at 97.79 109.2201 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3098,7 +3298,7 @@
 			)
 		)
 		(property "Value" "JST_PH_01x02"
-			(at 110.49 105.4101 0)
+			(at 97.79 106.6801 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3107,7 +3307,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
-			(at 107.95 107.95 0)
+			(at 95.25 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3116,7 +3316,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.95 107.95 0)
+			(at 95.25 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3125,7 +3325,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 107.95 107.95 0)
+			(at 95.25 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3214,35 +3414,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 115.57 81.28 0)
+		(lib_id "power:GND")
+		(at 208.28 83.82 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ce559185-8ee3-4dc5-bc8b-05a2308cac75")
-		(property "Reference" "C16"
-			(at 112.014 81.026 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 112.014 83.566 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 114.6048 85.09 0)
+		(uuid "d400ed0e-dce5-4c2a-82b4-c71ed915fb2c")
+		(property "Reference" "#PWR066"
+			(at 208.28 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3250,8 +3432,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 115.57 81.28 0)
+		(property "Value" "GND"
+			(at 208.28 88.138 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 208.28 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3259,8 +3449,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 115.57 81.28 0)
+		(property "Datasheet" ""
+			(at 208.28 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3268,16 +3458,22 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "1896f135-acdd-431c-b076-c2920898274f")
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 208.28 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "548e7237-eaf5-4648-962d-1e316a5e2b96")
+			(uuid "c3f846ed-cb91-4c09-9141-0795d5b7e792")
 		)
 		(instances
 			(project "heli_avionics"
 				(path "/c384ea46-0dfb-4673-b2f4-1f88fafbcaa5/e66d27d0-3506-42a3-bb0e-923c7c751e41"
-					(reference "C16")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -3351,7 +3547,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 93.98 90.17 0)
+		(at 81.28 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3359,7 +3555,7 @@
 		(dnp no)
 		(uuid "ededddb1-6337-409a-93c1-1586e937481e")
 		(property "Reference" "#PWR040"
-			(at 93.98 93.98 0)
+			(at 81.28 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3368,7 +3564,7 @@
 			)
 		)
 		(property "Value" "+BATT"
-			(at 93.98 86.106 0)
+			(at 81.28 87.376 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3376,7 +3572,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 90.17 0)
+			(at 81.28 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3385,7 +3581,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 90.17 0)
+			(at 81.28 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3394,7 +3590,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 93.98 90.17 0)
+			(at 81.28 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
