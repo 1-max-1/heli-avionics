@@ -1018,18 +1018,6 @@
 			)
 		)
 	)
-	(junction
-		(at 259.08 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "29f03a12-b9a9-40c9-93b5-165889d0eb44")
-	)
-	(junction
-		(at 259.08 116.84)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "51d6fb57-8a64-4596-8498-bbcdf9bcb240")
-	)
 	(wire
 		(pts
 			(xy 173.99 106.68) (xy 181.61 106.68)
@@ -1092,16 +1080,6 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 105.41) (xy 259.08 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ea01543-4d38-444b-b46a-d9979dd15481")
-	)
-	(wire
-		(pts
 			(xy 66.04 105.41) (xy 63.5 105.41)
 		)
 		(stroke
@@ -1119,16 +1097,6 @@
 			(type default)
 		)
 		(uuid "2eeef9bd-04e9-4111-bc72-6210616e71c9")
-	)
-	(wire
-		(pts
-			(xy 255.27 109.22) (xy 259.08 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b5446e6-5bc4-45ab-9c2e-17f2aff67111")
 	)
 	(wire
 		(pts
@@ -1162,16 +1130,6 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 119.38) (xy 259.08 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "663e2aca-f9c0-4dc3-b6df-26e7b6b95c10")
-	)
-	(wire
-		(pts
 			(xy 63.5 105.41) (xy 63.5 114.3)
 		)
 		(stroke
@@ -1199,36 +1157,6 @@
 			(type default)
 		)
 		(uuid "7855881f-c7ac-40a0-b216-21397f7bb37a")
-	)
-	(wire
-		(pts
-			(xy 259.08 116.84) (xy 262.89 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "80d5b968-d9a1-4fb8-86cc-c18a958ff1f8")
-	)
-	(wire
-		(pts
-			(xy 259.08 109.22) (xy 262.89 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8119e7c0-3f68-4f4c-bae4-a87f9fbb60f9")
-	)
-	(wire
-		(pts
-			(xy 259.08 116.84) (xy 255.27 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "843c5042-520e-4eb9-90db-35c6a696a09d")
 	)
 	(wire
 		(pts
@@ -1282,16 +1210,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 118.11) (xy 113.03 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3c258f1-a5de-42a7-ae62-26b26f47d7d2")
-	)
-	(wire
-		(pts
 			(xy 201.93 96.52) (xy 207.01 96.52)
 		)
 		(stroke
@@ -1309,16 +1227,6 @@
 			(type default)
 		)
 		(uuid "c175d845-4ac9-4bdc-bc0f-4ef563750347")
-	)
-	(wire
-		(pts
-			(xy 113.03 128.27) (xy 113.03 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4d22cbe-8293-4912-9863-285dbe7c23b6")
 	)
 	(wire
 		(pts
@@ -1380,7 +1288,7 @@
 		)
 		(uuid "39f807a0-adab-45ef-a2bd-4906554132bc")
 	)
-	(text "Bulk capacitance calculated with C_{bulk} >  3 * ∆I_{motor} / f_{PWM} / ∆V_{supply}\nUsing f_{PWM} = 32 kHz, ∆V_{supply} = 0.05V\nBig motors:  ∆I_{motor} = 0.04A\nSmall motor: ∆I_{motor} = 0.02A\nWith a bit of safety margin included"
+	(text "Bulk capacitance calculated with C_{bulk} >  3 * ∆I_{motor} / f_{PWM} / ∆V_{supply}\nUsing f_{PWM} = 32 kHz, ∆V_{supply} = 0.05V\nBig motors:  ∆I_{motor} = 0.04A\nSmall motor: ∆I_{motor} = 0.02A\nAnd then C x2 for the 2 motors on one driver\n\nWith a bit of safety margin included"
 		(exclude_from_sim no)
 		(at 77.978 32.258 0)
 		(effects
@@ -1393,7 +1301,7 @@
 	)
 	(text "From https://www.ti.com/lit/an/slvaft0/slvaft0.pdf"
 		(exclude_from_sim no)
-		(at 100.584 42.672 0)
+		(at 100.584 44.704 0)
 		(effects
 			(font
 				(size 1.143 1.143)
@@ -1403,7 +1311,7 @@
 	)
 	(text "Bulk capacitance for motor"
 		(exclude_from_sim no)
-		(at 122.174 127.762 0)
+		(at 125.476 117.348 0)
 		(effects
 			(font
 				(size 0.762 0.762)
@@ -1421,9 +1329,9 @@
 		)
 		(uuid "f026c220-4fb5-460b-9120-e5a818a69e8b")
 	)
-	(text "Bulk capacitance for motor"
+	(text "Bulk capacitance for motors"
 		(exclude_from_sim no)
-		(at 245.11 105.664 0)
+		(at 243.078 108.458 0)
 		(effects
 			(font
 				(size 0.762 0.762)
@@ -1828,7 +1736,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 113.03 128.27 0)
+		(at 113.03 127 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1836,7 +1744,7 @@
 		(dnp no)
 		(uuid "3a4d0810-6e41-407e-a1aa-d8090e824484")
 		(property "Reference" "#PWR026"
-			(at 113.03 134.62 0)
+			(at 113.03 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1845,7 +1753,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 113.03 132.588 0)
+			(at 113.03 131.318 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1853,7 +1761,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 128.27 0)
+			(at 113.03 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1862,7 +1770,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 128.27 0)
+			(at 113.03 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1871,7 +1779,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 113.03 128.27 0)
+			(at 113.03 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1893,7 +1801,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 259.08 105.41 0)
+		(at 255.27 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1901,7 +1809,7 @@
 		(dnp no)
 		(uuid "3dcd370a-5c20-40d9-b654-66f4f64f999d")
 		(property "Reference" "#PWR031"
-			(at 259.08 109.22 0)
+			(at 255.27 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1910,7 +1818,7 @@
 			)
 		)
 		(property "Value" "+BATT"
-			(at 259.08 101.346 0)
+			(at 255.27 105.156 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1918,7 +1826,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 259.08 105.41 0)
+			(at 255.27 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1927,7 +1835,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 259.08 105.41 0)
+			(at 255.27 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1936,7 +1844,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 259.08 105.41 0)
+			(at 255.27 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2155,76 +2063,6 @@
 			(project "heli_avionics"
 				(path "/c384ea46-0dfb-4673-b2f4-1f88fafbcaa5/e66d27d0-3506-42a3-bb0e-923c7c751e41"
 					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 262.89 113.03 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "711ee46b-6b9e-4c0e-8f13-a4d373a3349f")
-		(property "Reference" "C25"
-			(at 266.7 110.8709 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "680uF"
-			(at 266.7 113.4109 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D7.5mm_P2.50mm"
-			(at 263.8552 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 262.89 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 262.89 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "085f4657-3f0b-48db-ba98-479a7813bb1c")
-		)
-		(pin "1"
-			(uuid "911117f6-a834-454a-83f4-2e92bbdbc7f9")
-		)
-		(instances
-			(project "heli_avionics"
-				(path "/c384ea46-0dfb-4673-b2f4-1f88fafbcaa5/e66d27d0-3506-42a3-bb0e-923c7c751e41"
-					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -2636,7 +2474,7 @@
 		(dnp no)
 		(uuid "911a157f-e3d6-4514-8b29-ce23f6ccdf7c")
 		(property "Reference" "C24"
-			(at 247.396 111.252 0)
+			(at 246.634 112.776 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2644,8 +2482,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "680uF"
-			(at 245.364 113.792 0)
+		(property "Value" "1500uF"
+			(at 244.602 115.316 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2653,7 +2491,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D7.5mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
 			(at 256.2352 116.84 0)
 			(effects
 				(font
@@ -2697,7 +2535,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 113.03 118.11 0)
+		(at 113.03 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2705,7 +2543,7 @@
 		(dnp no)
 		(uuid "9725bccc-d8b0-4aba-b227-98a100f6b338")
 		(property "Reference" "#PWR025"
-			(at 113.03 121.92 0)
+			(at 113.03 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2714,7 +2552,7 @@
 			)
 		)
 		(property "Value" "+BATT"
-			(at 113.03 114.046 0)
+			(at 113.03 115.316 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2722,7 +2560,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 118.11 0)
+			(at 113.03 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2731,7 +2569,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 118.11 0)
+			(at 113.03 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2740,7 +2578,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 113.03 118.11 0)
+			(at 113.03 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2897,7 +2735,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 259.08 119.38 0)
+		(at 255.27 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2905,7 +2743,7 @@
 		(dnp no)
 		(uuid "abe91a09-f345-400c-9f04-e1a245040ed3")
 		(property "Reference" "#PWR032"
-			(at 259.08 125.73 0)
+			(at 255.27 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2914,7 +2752,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 259.08 123.698 0)
+			(at 255.27 121.158 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2922,7 +2760,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 259.08 119.38 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2931,7 +2769,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 259.08 119.38 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2940,7 +2778,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 259.08 119.38 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
