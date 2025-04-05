@@ -4941,10 +4941,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "d67cdd31-6911-4bfa-a36f-c74f6c506112")
+			(uuid "d67cdd31-6911-4bfa-a36f-c74f6c506113")
 		)
 		(pin "1"
-			(uuid "e06256d0-6566-4617-98c4-19c52890010b")
+			(uuid "e06256d0-6566-4617-98c4-19c52890010c")
 		)
 		(instances
 			(project ""
