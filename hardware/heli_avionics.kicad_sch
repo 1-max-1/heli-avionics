@@ -2081,6 +2081,26 @@
 		(color 0 0 0 0)
 		(uuid "d26a1ee6-e8de-4c77-b846-b3463c49d0d1")
 	)
+	(no_connect
+		(at 187.96 93.98)
+		(uuid "0387eab5-7787-4a54-bfe2-79638e4ec87b")
+	)
+	(no_connect
+		(at 187.96 58.42)
+		(uuid "204ce68f-29ed-41b5-9780-8b07d5630df0")
+	)
+	(no_connect
+		(at 187.96 88.9)
+		(uuid "29db883c-2a9c-487e-ba1e-c16d9cfdf9a3")
+	)
+	(no_connect
+		(at 187.96 60.96)
+		(uuid "62df415a-e99d-4e39-852f-82d743d7507e")
+	)
+	(no_connect
+		(at 187.96 91.44)
+		(uuid "95eb3e85-fdb3-4790-9b7a-29f65ccf7ad1")
+	)
 	(wire
 		(pts
 			(xy 62.23 49.53) (xy 62.23 52.07)
@@ -2103,7 +2123,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 88.9) (xy 190.5 88.9)
+			(xy 187.96 88.9) (xy 190.5 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2353,6 +2373,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 58.42) (xy 190.5 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46606c04-0f46-4525-b7f0-5ee34939c257")
+	)
+	(wire
+		(pts
 			(xy 106.68 45.72) (xy 106.68 39.37)
 		)
 		(stroke
@@ -2523,7 +2553,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 91.44) (xy 190.5 91.44)
+			(xy 187.96 91.44) (xy 190.5 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2660,6 +2690,16 @@
 			(type default)
 		)
 		(uuid "a98213db-3a0e-4b78-b818-49b0aaae76d3")
+	)
+	(wire
+		(pts
+			(xy 187.96 60.96) (xy 190.5 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abf2b091-dddb-4021-9de5-ecb8269d8f3d")
 	)
 	(wire
 		(pts
@@ -2843,7 +2883,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 93.98) (xy 190.5 93.98)
+			(xy 187.96 93.98) (xy 190.5 93.98)
 		)
 		(stroke
 			(width 0)
@@ -3015,17 +3055,6 @@
 		)
 		(uuid "0c173abf-8824-4fcb-a6aa-8f6dbb0f4924")
 	)
-	(label "PD3"
-		(at 181.61 88.9 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1234d76c-f820-49f4-a875-596dea2c8549")
-	)
 	(label "I2C_SCL"
 		(at 139.7 111.76 180)
 		(fields_autoplaced yes)
@@ -3147,17 +3176,6 @@
 		)
 		(uuid "449adeec-bcd7-448b-ad70-f2f6a3eb38d2")
 	)
-	(label "PD4"
-		(at 181.61 91.44 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "49533333-89ab-4630-80da-b82b14b450b2")
-	)
 	(label "PD1"
 		(at 165.1 140.97 0)
 		(fields_autoplaced yes)
@@ -3179,17 +3197,6 @@
 			(justify right bottom)
 		)
 		(uuid "52275f61-6487-4b54-a0b5-dbc32cdd94fe")
-	)
-	(label "PD5"
-		(at 181.61 93.98 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "54bd47d2-46cf-4738-9472-bad0667a8400")
 	)
 	(label "PA7"
 		(at 232.41 76.2 180)
