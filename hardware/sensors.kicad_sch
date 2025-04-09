@@ -733,6 +733,12 @@
 		(uuid "2e1a8278-64e1-4cc3-8ed3-6797086e6200")
 	)
 	(junction
+		(at 90.17 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "491d39fa-6a99-42f0-b409-b98f6c5375f1")
+	)
+	(junction
 		(at 133.35 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -778,7 +784,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 83.82) (xy 92.71 95.25)
+			(xy 90.17 83.82) (xy 90.17 95.25)
 		)
 		(stroke
 			(width 0)
@@ -788,7 +794,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 100.33) (xy 92.71 100.33)
+			(xy 82.55 100.33) (xy 92.71 100.33)
 		)
 		(stroke
 			(width 0)
@@ -808,6 +814,26 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 105.41) (xy 90.17 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7112bf98-f724-4e56-98f4-d924c77cd7cf")
+	)
+	(wire
+		(pts
+			(xy 90.17 95.25) (xy 92.71 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7247cb15-ff8c-456b-aeae-ba558cf8bc88")
+	)
+	(wire
+		(pts
 			(xy 163.83 77.47) (xy 167.64 77.47)
 		)
 		(stroke
@@ -818,7 +844,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 102.87) (xy 92.71 102.87)
+			(xy 82.55 102.87) (xy 92.71 102.87)
 		)
 		(stroke
 			(width 0)
@@ -855,16 +881,6 @@
 			(type default)
 		)
 		(uuid "862f3864-f071-4f70-a05b-664e4b34639d")
-	)
-	(wire
-		(pts
-			(xy 92.71 105.41) (xy 92.71 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "87d4671f-2002-4c05-98fc-8710973c2a4d")
 	)
 	(wire
 		(pts
@@ -908,6 +924,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 105.41) (xy 90.17 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e760887f-c3eb-4e7b-a6bc-4ef9c2ae4c64")
+	)
+	(wire
+		(pts
 			(xy 133.35 106.68) (xy 133.35 109.22)
 		)
 		(stroke
@@ -930,7 +956,7 @@
 	)
 	(hierarchical_label "SDA"
 		(shape input)
-		(at 85.09 102.87 180)
+		(at 82.55 102.87 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -942,7 +968,7 @@
 	)
 	(hierarchical_label "SCL"
 		(shape output)
-		(at 85.09 100.33 180)
+		(at 82.55 100.33 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1013,71 +1039,6 @@
 			(project "heli_avionics"
 				(path "/c384ea46-0dfb-4673-b2f4-1f88fafbcaa5/60dd9951-96f3-46dc-a644-dae54ddbd92e"
 					(reference "#PWR027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 92.71 111.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "15eaf912-9087-4234-a75f-f77bc188a354")
-		(property "Reference" "#PWR067"
-			(at 92.71 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 92.71 116.078 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 92.71 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 92.71 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 92.71 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d44543f9-7b31-419e-8be6-26614a536c17")
-		)
-		(instances
-			(project "heli_avionics"
-				(path "/c384ea46-0dfb-4673-b2f4-1f88fafbcaa5/60dd9951-96f3-46dc-a644-dae54ddbd92e"
-					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -1500,7 +1461,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 92.71 83.82 0)
+		(at 90.17 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1509,7 +1470,7 @@
 		(fields_autoplaced yes)
 		(uuid "d84ecea1-4cf2-47e9-bd79-05e9a363d6cb")
 		(property "Reference" "#PWR020"
-			(at 92.71 87.63 0)
+			(at 90.17 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1518,7 +1479,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 92.71 78.74 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1526,7 +1487,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.71 83.82 0)
+			(at 90.17 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1535,7 +1496,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 83.82 0)
+			(at 90.17 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1544,7 +1505,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 92.71 83.82 0)
+			(at 90.17 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
