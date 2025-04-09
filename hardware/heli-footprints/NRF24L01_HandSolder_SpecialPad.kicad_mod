@@ -275,78 +275,6 @@
 			(type solid)
 		)
 	)
-	(pad "" thru_hole circle
-		(at -0.2 -0.2)
-		(size 0.6 0.6)
-		(drill 0.25)
-		(property pad_prop_heatsink)
-		(layers "*.Cu")
-		(remove_unused_layers no)
-		(zone_connect 2)
-		(uuid "d146312f-1b25-4732-81ed-be62b3aa7f62")
-	)
-	(pad "" smd custom
-		(at -0.1 -0.1)
-		(size 0.8 0.8)
-		(property pad_prop_heatsink)
-		(layers "F.Cu")
-		(zone_connect 2)
-		(options
-			(clearance outline)
-			(anchor rect)
-		)
-		(primitives
-			(gr_poly
-				(pts
-					(xy -0.5 -0.5) (xy 1.2 -0.5) (xy 1.2 1.2) (xy 0.1 1.2) (xy -0.5 0.6)
-				)
-				(width 0.2)
-				(fill yes)
-			)
-		)
-		(uuid "318c42eb-0224-47a0-bd3d-994f6634d515")
-	)
-	(pad "" smd custom
-		(at -0.1 -0.1)
-		(size 0.8 0.8)
-		(property pad_prop_heatsink)
-		(layers "B.Cu")
-		(zone_connect 2)
-		(options
-			(clearance outline)
-			(anchor rect)
-		)
-		(primitives
-			(gr_poly
-				(pts
-					(xy -0.5 -0.5) (xy 1.2 -0.5) (xy 1.2 1.2) (xy 0.1 1.2) (xy -0.5 0.6)
-				)
-				(width 0.2)
-				(fill yes)
-			)
-		)
-		(uuid "26371637-3209-44b8-acd4-d5d88cf3ffdb")
-	)
-	(pad "" thru_hole circle
-		(at 0.7 -0.2)
-		(size 0.6 0.6)
-		(drill 0.25)
-		(property pad_prop_heatsink)
-		(layers "*.Cu")
-		(remove_unused_layers no)
-		(zone_connect 2)
-		(uuid "d27ece07-685c-4780-875f-416d4b1fd1ec")
-	)
-	(pad "" thru_hole circle
-		(at 0.7 0.7)
-		(size 0.6 0.6)
-		(drill 0.25)
-		(property pad_prop_heatsink)
-		(layers "*.Cu")
-		(remove_unused_layers no)
-		(zone_connect 2)
-		(uuid "3bc3e448-403c-4174-bd88-0e7c412e7e6a")
-	)
 	(pad "1" smd roundrect
 		(at -2.0625 -1)
 		(size 1.075 0.25)
@@ -486,6 +414,78 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(roundrect_rratio 0.25)
 		(uuid "95200737-dc80-42d5-89b1-f93c4058d1a3")
+	)
+	(pad "21" thru_hole circle
+		(at -0.2 -0.2)
+		(size 0.6 0.6)
+		(drill 0.25)
+		(property pad_prop_heatsink)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(zone_connect 2)
+		(uuid "d146312f-1b25-4732-81ed-be62b3aa7f62")
+	)
+	(pad "21" smd custom
+		(at -0.1 -0.1)
+		(size 0.8 0.8)
+		(property pad_prop_heatsink)
+		(layers "F.Cu")
+		(zone_connect 2)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -0.5 -0.5) (xy 1.2 -0.5) (xy 1.2 1.2) (xy 0.1 1.2) (xy -0.5 0.6)
+				)
+				(width 0.2)
+				(fill yes)
+			)
+		)
+		(uuid "318c42eb-0224-47a0-bd3d-994f6634d515")
+	)
+	(pad "21" smd custom
+		(at -0.1 -0.1)
+		(size 0.8 0.8)
+		(property pad_prop_heatsink)
+		(layers "B.Cu")
+		(zone_connect 2)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -0.5 -0.5) (xy 1.2 -0.5) (xy 1.2 1.2) (xy 0.1 1.2) (xy -0.5 0.6)
+				)
+				(width 0.2)
+				(fill yes)
+			)
+		)
+		(uuid "26371637-3209-44b8-acd4-d5d88cf3ffdb")
+	)
+	(pad "21" thru_hole circle
+		(at 0.7 -0.2)
+		(size 0.6 0.6)
+		(drill 0.25)
+		(property pad_prop_heatsink)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(zone_connect 2)
+		(uuid "d27ece07-685c-4780-875f-416d4b1fd1ec")
+	)
+	(pad "21" thru_hole circle
+		(at 0.7 0.7)
+		(size 0.6 0.6)
+		(drill 0.25)
+		(property pad_prop_heatsink)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(zone_connect 2)
+		(uuid "3bc3e448-403c-4174-bd88-0e7c412e7e6a")
 	)
 	(model "${KICAD8_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm.wrl"
 		(offset
