@@ -2241,6 +2241,16 @@
 		)
 		(uuid "febbdf9d-7c62-49a2-8312-7f3eb126d150")
 	)
+	(text "C_{L} = (C + C_{stray})/2\nC_{stray} = approx. 5-6 pF"
+		(exclude_from_sim no)
+		(at 209.042 126.746 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2e545f20-3c04-4265-ac42-d1e5817bb622")
+	)
 	(text "Appnote recommends these 2,\nbut the bogatin book recommends only using 3 22uF caps."
 		(exclude_from_sim no)
 		(at 101.346 64.008 0)
@@ -2252,15 +2262,15 @@
 		)
 		(uuid "733042f9-d729-4b35-8b38-4a1cba86a5bf")
 	)
-	(text "Sort these values out\nAlso maybe choose another better crystal"
+	(text "IDK. May need to adjust value,\nmaybe order a range of caps 10-16 pF"
 		(exclude_from_sim no)
-		(at 183.388 135.89 0)
+		(at 206.756 134.874 0)
 		(effects
 			(font
-				(size 0.762 0.762)
+				(size 1.27 1.27)
 			)
 		)
-		(uuid "9df7ecfc-98ae-4157-9d18-0cc49c3a3b57")
+		(uuid "d56bbb3d-40e4-4a3d-9b3e-16bc7ceee809")
 	)
 	(hierarchical_label "CE"
 		(shape input)
@@ -3967,7 +3977,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "13pF"
+		(property "Value" "12pF"
 			(at 188.214 123.19 0)
 			(effects
 				(font
@@ -4052,7 +4062,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://img.pcbx.com/dev/file/part/spec/X322512MSB4SI-Yangxing%20Technology.pdf"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588879072148017152"
 			(at 162.56 110.49 0)
 			(effects
 				(font
@@ -4178,7 +4188,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "13pF"
+		(property "Value" "12pF"
 			(at 168.656 123.19 0)
 			(effects
 				(font
