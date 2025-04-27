@@ -1,0 +1,8 @@
+(version 1)
+(rule "annular_via"
+   (constraint annular_width (min 0.075mm))
+   (condition "A.Type == 'Via'"))
+
+(rule "annular_pad"
+   (constraint annular_width (min 0.2mm))
+   (condition "A.Type == 'Pad'"))

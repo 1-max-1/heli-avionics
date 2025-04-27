@@ -66,7 +66,6 @@
 			)
 		)
 	)
-	(attr smd)
 	(fp_line
 		(start -1.01 -1.14)
 		(end 0.99 -1.14)
@@ -269,9 +268,9 @@
 		(uuid "cd80fb1d-0b21-4b2f-84c0-8006e2954b64")
 	)
 	(pad "9" thru_hole circle
-		(at 0 -0.508)
-		(size 0.5 0.5)
-		(drill 0.3)
+		(at 0 -0.46)
+		(size 0.65 0.65)
+		(drill 0.25)
 		(layers "*.Cu")
 		(remove_unused_layers no)
 		(zone_connect 2)
@@ -290,9 +289,9 @@
 		(uuid "867d2ce5-fb3f-4fc6-86a2-2d6cdd4c2629")
 	)
 	(pad "9" thru_hole circle
-		(at 0 0.508)
-		(size 0.5 0.5)
-		(drill 0.3)
+		(at 0 0.47)
+		(size 0.65 0.65)
+		(drill 0.25)
 		(layers "*.Cu")
 		(remove_unused_layers no)
 		(zone_connect 2)
