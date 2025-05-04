@@ -3061,7 +3061,7 @@
 		)
 		(uuid "0c173abf-8824-4fcb-a6aa-8f6dbb0f4924")
 	)
-	(label "PF1"
+	(label "PD6"
 		(at 77.47 137.16 180)
 		(fields_autoplaced yes)
 		(effects
@@ -3446,7 +3446,7 @@
 		)
 		(uuid "cf198e1e-c8da-40ef-b3ac-169585539099")
 	)
-	(label "PD6"
+	(label "PF1"
 		(at 77.47 130.81 180)
 		(fields_autoplaced yes)
 		(effects
@@ -3479,7 +3479,7 @@
 		)
 		(uuid "d218044e-5e4e-4b91-b3f2-2f65f893dcec")
 	)
-	(label "PD7"
+	(label "PF2"
 		(at 77.47 133.35 180)
 		(fields_autoplaced yes)
 		(effects
@@ -3556,7 +3556,7 @@
 		)
 		(uuid "f8d97274-4ece-41db-8be5-afd861b3f08e")
 	)
-	(label "PF2"
+	(label "PD7"
 		(at 77.47 139.7 180)
 		(fields_autoplaced yes)
 		(effects

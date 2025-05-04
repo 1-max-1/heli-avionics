@@ -173,7 +173,7 @@
 	(net 14 "Net-(Q1-G)")
 	(net 15 "Net-(Q1-D)")
 	(net 16 "Net-(R2-Pad1)")
-	(net 17 "unconnected-(U1-PF1{slash}TOSC2-Pad21)")
+	(net 17 "/PF1")
 	(net 18 "/PD7")
 	(net 19 "/PF4")
 	(net 20 "/PD2")
@@ -4137,7 +4137,7 @@
 			)
 		)
 		(property "Value" "JST_XH_01x02"
-			(at 1.25 4.6 360)
+			(at 1.25 4.6 0)
 			(layer "F.Fab")
 			(uuid "05aa0f09-42fc-4e49-86be-1de86ddaed74")
 			(effects
@@ -5055,7 +5055,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C26"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(uuid "ffde6976-9460-4104-856a-1964bc855d58")
 			(effects
@@ -5066,7 +5066,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "356437a8-ea1f-4381-82cc-d0b0ac486285")
 			(effects
@@ -5866,7 +5866,7 @@
 				)
 			)
 		)
-		(property "Value" "JST_ZH_01x02"
+		(property "Value" "JST_1.25mm"
 			(at 0.62 2.35 180)
 			(layer "F.Fab")
 			(uuid "4c09a7e5-033d-48c5-a532-65c034396608")
@@ -15667,9 +15667,9 @@
 			(at 4.25 -0.4 180)
 			(size 1.6 0.55)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 17 "unconnected-(U1-PF1{slash}TOSC2-Pad21)")
+			(net 17 "/PF1")
 			(pinfunction "PF1/TOSC2")
-			(pintype "bidirectional+no_connect")
+			(pintype "bidirectional")
 			(teardrops
 				(best_length_ratio 0.5)
 				(max_length 1)
@@ -17139,8 +17139,8 @@
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
 			(net 9 "Net-(J3-Pin_1)")
-			(pinfunction "OUT2")
-			(pintype "output")
+			(pinfunction "OUT1")
+			(pintype "passive")
 			(uuid "9edbf5ce-bcad-40cd-883a-92e88f3e37c9")
 		)
 		(pad "4" smd roundrect
@@ -17840,8 +17840,8 @@
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
 			(net 10 "Net-(J4-Pin_1)")
-			(pinfunction "OUT2")
-			(pintype "output")
+			(pinfunction "OUT1")
+			(pintype "passive")
 			(uuid "89c89b69-01cb-4b7c-ac71-ed2eeffe259d")
 		)
 		(pad "4" smd roundrect
@@ -17879,7 +17879,7 @@
 			(size 0.5 0.25)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 29 "/PD6")
+			(net 17 "/PF1")
 			(pinfunction "MODE")
 			(pintype "input")
 			(uuid "e8455e1d-2a8f-4a42-860e-ebc4396d7de3")
