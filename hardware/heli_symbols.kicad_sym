@@ -468,7 +468,7 @@
 				)
 			)
 			(pin output line
-				(at 10.16 7.62 180)
+				(at 10.16 2.54 180)
 				(length 2.54)
 				(name "OUT1"
 					(effects
@@ -486,7 +486,7 @@
 				)
 			)
 			(pin output line
-				(at 10.16 -7.62 180)
+				(at 10.16 -2.54 180)
 				(length 2.54)
 				(name "OUT2"
 					(effects
@@ -502,6 +502,7 @@
 						)
 					)
 				)
+				(alternate "OUT1" passive line)
 			)
 			(pin power_in line
 				(at 0 -12.7 90)
