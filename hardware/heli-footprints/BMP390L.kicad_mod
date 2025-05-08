@@ -318,4 +318,15 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "20df7da9-07b9-44da-8335-906a7b7bd7eb")
 	)
+	(model "${KIPRJMOD}/heli-3d-models/BMP390L.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
 )
