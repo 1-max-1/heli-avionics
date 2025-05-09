@@ -24363,6 +24363,42 @@
 		(net 1)
 		(uuid "1c04ac7f-bbb5-4fda-8f71-7d5b35a3998c")
 	)
+	(gr_rect
+		(start 111.592 113.408)
+		(end 114.092 115.408)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(fill solid)
+		(layer "B.Cu")
+		(net 1)
+		(uuid "261cf10c-ef66-4561-bf67-7951536f37bf")
+	)
+	(gr_rect
+		(start 104.226 119.892)
+		(end 106.726 121.892)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(fill solid)
+		(layer "B.Cu")
+		(net 1)
+		(uuid "8f7b887a-c5c4-4e0e-bd63-a4677a665506")
+	)
+	(gr_rect
+		(start 109.748 126.45775)
+		(end 112.248 128.45775)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(fill solid)
+		(layer "B.Cu")
+		(net 1)
+		(uuid "c0d24d64-b8f4-46ed-8b74-4f79851b4458")
+	)
 	(gr_line
 		(start 154.686 110.998)
 		(end 149.352 112.014)
