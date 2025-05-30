@@ -2989,6 +2989,17 @@
 		)
 		(uuid "1ce61521-e8a7-49b8-abef-b0603d60491c")
 	)
+	(text "I've made the LED resistor packages 0805 instead,\nbecause the tron lab has lots of 0805's in stock so I\ncan just quickly swap out for a different value if needed."
+		(exclude_from_sim no)
+		(at 237.744 92.456 0)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify left)
+		)
+		(uuid "239466f3-08c8-4d7e-8c8c-0895156e9f16")
+	)
 	(text "I2C is slower, but I am using it because the board\nis quite tight and I need to save on number of wires.\nAlso makes it easier to connect to the external lines."
 		(exclude_from_sim no)
 		(at 72.136 90.932 0)
@@ -3009,6 +3020,16 @@
 			)
 		)
 		(uuid "816fd2e6-384f-43c9-9c86-d73d631a58ea")
+	)
+	(text "See note\non right."
+		(exclude_from_sim no)
+		(at 172.466 76.454 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+		)
+		(uuid "906d57c4-b65e-4242-aad7-20de181d542e")
 	)
 	(text "To chassis led's"
 		(exclude_from_sim no)
@@ -5178,7 +5199,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 170.18 72.898 90)
 			(effects
 				(font
@@ -5746,7 +5767,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 245.11 77.978 90)
 			(effects
 				(font
