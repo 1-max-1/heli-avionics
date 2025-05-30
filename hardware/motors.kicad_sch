@@ -1513,7 +1513,7 @@
 		)
 		(uuid "39f807a0-adab-45ef-a2bd-4906554132bc")
 	)
-	(text "Bulk capacitance calculated with C_{bulk} >  3 * ∆I_{motor} / f_{PWM} / ∆V_{supply}\nUsing f_{PWM} = 32 kHz, ∆V_{supply} = 0.05V\nBig motors:  ∆I_{motor} = 0.04A\nSmall motor: ∆I_{motor} = 0.02A\nAnd then C x2 for the 2 motors on one driver\n\nWith a bit of safety margin included"
+	(text "Minimum bulk capacitance calculated with C_{bulk} >  3 * ∆I_{motor} / f_{PWM} / ∆V_{supply}\nUsing f_{PWM} = 32 kHz, ∆V_{supply} = 0.05V\nBig motors:  ∆I_{motor} = 0.04A\nSmall motor: ∆I_{motor} = 0.02A\nAnd then C x2 for the 2 motors on one driver\n\nWith a bit of safety margin included.\nThen just went up to the maximum value\nI could find on LCSC for the diameters that would fit on the pcb."
 		(exclude_from_sim no)
 		(at 77.978 32.258 0)
 		(effects
@@ -1526,7 +1526,7 @@
 	)
 	(text "From https://www.ti.com/lit/an/slvaft0/slvaft0.pdf"
 		(exclude_from_sim no)
-		(at 100.584 44.704 0)
+		(at 100.838 47.498 0)
 		(effects
 			(font
 				(size 1.143 1.143)
@@ -1534,7 +1534,7 @@
 		)
 		(uuid "7af07dd5-6b55-4f57-b5c4-47e676357d49")
 	)
-	(text "Bulk capacitance for motor"
+	(text "Bulk capacitance for tail motor"
 		(exclude_from_sim no)
 		(at 107.696 98.298 0)
 		(effects
@@ -1554,9 +1554,9 @@
 		)
 		(uuid "f026c220-4fb5-460b-9120-e5a818a69e8b")
 	)
-	(text "Bulk capacitance for motors"
+	(text "Bulk capacitance for main motors"
 		(exclude_from_sim no)
-		(at 216.408 107.188 0)
+		(at 215.138 106.934 0)
 		(effects
 			(font
 				(size 0.762 0.762)
@@ -1738,7 +1738,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A226MQ8NRNC_C59461.pdf"
 			(at 185.42 44.45 0)
 			(effects
 				(font
@@ -1747,7 +1747,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "6.3V 22uF X5R ±20% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 185.42 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C59461"
+			(at 185.42 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL10A226MQ8NRNC"
 			(at 185.42 44.45 0)
 			(effects
 				(font
@@ -1920,7 +1938,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "270uF"
+		(property "Value" "1000uF"
 			(at 99.06 104.5209 0)
 			(effects
 				(font
@@ -1938,7 +1956,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121646_Yunxing-SPT1AM102E14ORVZC_C3024245.pdf"
 			(at 95.25 104.14 0)
 			(effects
 				(font
@@ -1947,7 +1965,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Polarized capacitor"
+		(property "Description" "1000uF 10V ±20% Plugin,D6.3xL14mm Aluminum Electrolytic Capacitors - Leaded ROHS"
+			(at 95.25 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SPT1AM102E14ORVZC"
+			(at 95.25 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C3024245"
 			(at 95.25 104.14 0)
 			(effects
 				(font
@@ -2202,7 +2238,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A226MQ8NRNC_C59461.pdf"
 			(at 215.9 36.83 0)
 			(effects
 				(font
@@ -2211,7 +2247,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "6.3V 22uF X5R ±20% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 215.9 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL10A226MQ8NRNC"
+			(at 215.9 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C59461"
 			(at 215.9 36.83 0)
 			(effects
 				(font
@@ -2337,7 +2391,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A226MQ8NRNC_C59461.pdf"
 			(at 140.97 113.03 0)
 			(effects
 				(font
@@ -2346,7 +2400,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "6.3V 22uF X5R ±20% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 140.97 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C59461"
+			(at 140.97 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL10A226MQ8NRNC"
 			(at 140.97 113.03 0)
 			(effects
 				(font
@@ -2406,7 +2478,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A226MQ8NRNC_C59461.pdf"
 			(at 173.99 106.68 0)
 			(effects
 				(font
@@ -2415,7 +2487,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "6.3V 22uF X5R ±20% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 173.99 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL10A226MQ8NRNC"
+			(at 173.99 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C59461"
 			(at 173.99 106.68 0)
 			(effects
 				(font
@@ -2624,6 +2714,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "DRV8212DSGR"
+			(at 157.48 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C2843766"
+			(at 157.48 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "05d25f13-a85b-4ee0-9ce7-b37d1ec38bb6")
 		)
@@ -2697,7 +2805,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A226MQ8NRNC_C59461.pdf"
 			(at 43.18 68.58 0)
 			(effects
 				(font
@@ -2706,7 +2814,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "6.3V 22uF X5R ±20% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 43.18 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C59461"
+			(at 43.18 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL10A226MQ8NRNC"
 			(at 43.18 68.58 0)
 			(effects
 				(font
@@ -2944,7 +3070,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1500uF"
+		(property "Value" "3300uF"
 			(at 217.932 114.046 0)
 			(effects
 				(font
@@ -2962,7 +3088,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2409280200_Changzhou-Huawei-Elec-RL1A332MG250A00CE0_C240437.pdf"
 			(at 228.6 111.76 0)
 			(effects
 				(font
@@ -2971,7 +3097,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Polarized capacitor"
+		(property "Description" "3300uF 10V ±20% Plugin,D10xL25mm Aluminum Electrolytic Capacitors - Leaded ROHS"
+			(at 228.6 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C240437"
+			(at 228.6 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RL1A332MG250A00CE0"
 			(at 228.6 111.76 0)
 			(effects
 				(font
@@ -3162,7 +3306,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A226MQ8NRNC_C59461.pdf"
 			(at 77.47 68.58 0)
 			(effects
 				(font
@@ -3171,7 +3315,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "6.3V 22uF X5R ±20% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 77.47 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL10A226MQ8NRNC"
+			(at 77.47 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C59461"
 			(at 77.47 68.58 0)
 			(effects
 				(font
@@ -3511,6 +3673,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C2843766"
+			(at 199.39 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "DRV8212DSGR"
+			(at 199.39 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "d659d242-3570-449d-a7b4-dde16ef5834c")
 		)
@@ -3596,6 +3776,24 @@
 		)
 		(property "Description" "H-Bridge driver, 4A, Low Voltage, PWM input, Half Bridge Mode, Low-Power Sleep Mode, WSON-8"
 			(at 57.404 71.628 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C2843766"
+			(at 58.42 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "DRV8212DSGR"
+			(at 58.42 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
