@@ -2696,7 +2696,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221127_UNI-ROYAL-Uniroyal-Elec-0603WAF2202T5E_C31850.pdf"
 			(at 72.39 143.51 0)
 			(effects
 				(font
@@ -2705,7 +2705,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "100mW Thick Film Resistors 75V ±100ppm/℃ ±1% 22kΩ 0603 Chip Resistor - Surface Mount ROHS"
+			(at 72.39 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C31850"
+			(at 72.39 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF2202T5E"
 			(at 72.39 143.51 0)
 			(effects
 				(font
@@ -3180,7 +3198,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0603WAF1500T5E_C22808.pdf"
 			(at 55.88 154.94 0)
 			(effects
 				(font
@@ -3189,8 +3207,26 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "100mW Thick Film Resistors 75V ±100ppm/℃ ±1% 150Ω 0603 Chip Resistor - Surface Mount ROHS"
 			(at 55.88 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C22808"
+			(at 55.88 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1500T5E"
+			(at 55.88 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3458,6 +3494,24 @@
 			)
 		)
 		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
+			(at 69.85 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C20917"
+			(at 69.85 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "AO3400A"
 			(at 69.85 154.94 0)
 			(effects
 				(font
@@ -4303,6 +4357,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "TPS7A2030PDBVR"
+			(at 226.06 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C963429"
+			(at 226.06 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b91fc642-0089-44e4-8dc8-866bcfba143d")
 		)
@@ -4452,7 +4524,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221127_UNI-ROYAL-Uniroyal-Elec-0603WAF2202T5E_C31850.pdf"
 			(at 72.39 130.81 0)
 			(effects
 				(font
@@ -4461,7 +4533,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "100mW Thick Film Resistors 75V ±100ppm/℃ ±1% 22kΩ 0603 Chip Resistor - Surface Mount ROHS"
+			(at 72.39 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C31850"
+			(at 72.39 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF2202T5E"
 			(at 72.39 130.81 0)
 			(effects
 				(font
@@ -4735,6 +4825,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C963429"
+			(at 226.06 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "TPS7A2030PDBVR"
+			(at 226.06 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "16e6d8c7-8d14-4638-b4fa-ad85e2b41708")
 		)
@@ -4796,7 +4904,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0603WAF5102T5E_C23196.pdf"
 			(at 62.23 161.29 0)
 			(effects
 				(font
@@ -4805,7 +4913,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "100mW Thick Film Resistors 75V ±100ppm/℃ ±1% 51kΩ 0603 Chip Resistor - Surface Mount ROHS"
+			(at 62.23 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C23196"
+			(at 62.23 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF5102T5E"
 			(at 62.23 161.29 0)
 			(effects
 				(font

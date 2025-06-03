@@ -540,6 +540,32 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C963429"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "20a0bbf4-4627-4e8f-a799-8375c9a2265f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "TPS7A2030PDBVR"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e4a955ad-96e3-410c-9d91-873fdf5e8d36")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/f8f87cfe-571f-4a92-acee-79776e4ce004/ea61d6dc-fe92-4fd0-b387-4a542611cb82")
 		(sheetname "Power circuits")
@@ -846,7 +872,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411220213_FH--Guangdong-Fenghua-Advanced-Tech-0603CG4R7C500NT_C1669.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -859,7 +885,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "50V 4.7pF C0G 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -868,6 +894,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part #" "C1669"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aed71208-aa25-4311-90b8-37741cbbe64e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "0603CG4R7C500NT"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d40d7564-1435-4c11-ba95-14cd985f98aa")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -1342,7 +1394,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://productfinder.pulseelectronics.com/api/open/part-attachments/datasheet/BSCQ000603032N7B00"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1355,7 +1407,7 @@
 				)
 			)
 		)
-		(property "Description" "Inductor"
+		(property "Description" "2.7 nH Unshielded Multilayer Inductor 400 mA 320mOhm Max 0201 (0603 Metric)"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1364,6 +1416,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "BSCQ000603032N7B00"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "34770c6c-327e-42e6-8889-97c4b2f8be73")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -4690,7 +4755,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221127_UNI-ROYAL-Uniroyal-Elec-0603WAF2202T5E_C31850.pdf"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4703,7 +4768,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "100mW Thick Film Resistors 75V ±100ppm/℃ ±1% 22kΩ 0603 Chip Resistor - Surface Mount ROHS"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4712,6 +4777,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "0603WAF2202T5E"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d7260b4b-844a-4306-9bb5-41588d6cb094")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part #" "C31850"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c0879f71-d165-4d31-836a-cb7334de1186")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -4925,7 +5016,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2005141203_YAGEO-CC0603FRNPO9BN120_C519482.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4938,7 +5029,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "50V 12pF NP0 ±1% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4947,6 +5038,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part #" "C519482"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "da8107ac-e322-48dc-aa8e-d8ccd4464413")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0603FRNPO9BN120"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "11dfac92-6195-438a-b4ce-c66113979d4b")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -5518,7 +5635,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411220213_FH--Guangdong-Fenghua-Advanced-Tech-0603B222K500NT_C1604.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5531,7 +5648,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "50V 2.2nF X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5540,6 +5657,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part #" "C1604"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "106a4414-c3ae-4b3e-9a67-2da57094a675")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "0603B222K500NT"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5c6d42c8-6ab4-486b-9227-724b2d65830b")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -5753,7 +5896,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0603WAF1500T5E_C22808.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5766,7 +5909,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "100mW Thick Film Resistors 75V ±100ppm/℃ ±1% 150Ω 0603 Chip Resistor - Surface Mount ROHS"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5775,6 +5918,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part #" "C22808"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "af59e00f-4bb5-4b3b-98f1-cec712b17518")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1500T5E"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "978a3d1b-7305-4421-ac6d-80f908cd1aed")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -6930,7 +7099,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B333KB8NNNC_C21117.pdf"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6943,7 +7112,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "50V 33nF X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6952,6 +7121,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part #" "C21117"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "15fe314c-9d08-4f06-827e-3dcabdc46648")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CL10B333KB8NNNC"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b3c98119-dc8e-4653-a860-e7cce9dcc2aa")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -7282,7 +7477,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2005141203_YAGEO-CC0603FRNPO9BN120_C519482.pdf"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7295,7 +7490,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "50V 12pF NP0 ±1% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7304,6 +7499,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0603FRNPO9BN120"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "502f10b4-a924-4016-a28e-eabbbac966eb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part #" "C519482"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ce0c7d6a-e142-4ced-b41d-97c49b260da6")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -7978,7 +8199,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_HQ_Low_ESR_HH.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7991,7 +8212,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "1.5 pF ±0.1pF 50V Ceramic Capacitor C0G, NP0 0603 (1608 Metric)"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8000,6 +8221,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "HH18N1R5B500CT"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b4e8a2d4-81ae-479b-96ae-a2162d9ea89a")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -8704,6 +8938,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part #" "C57112"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cd9074c4-e47c-4f58-ac59-3496ca1b2abb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "0603B103K500NT"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1b6fd5f4-80f8-4455-afb7-292ccf79c2df")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -9980,7 +10240,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://productfinder.pulseelectronics.com/api/open/part-attachments/datasheet/BSCQ000603038N2H00"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9993,7 +10253,7 @@
 				)
 			)
 		)
-		(property "Description" "Inductor"
+		(property "Description" "8.2 nH Unshielded Multilayer Inductor 290 mA 570mOhm Max 0201 (0603 Metric)"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10002,6 +10262,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "BSCQ000603038N2H00"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b9800b96-3567-4603-8270-9c24f36704b7")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -10217,7 +10490,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0603WAF1004T5E_C22935.pdf"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10230,7 +10503,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "100mW Thick Film Resistors 75V ±100ppm/℃ ±1% 1MΩ 0603 Chip Resistor - Surface Mount ROHS"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10239,6 +10512,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part #" "C22935"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "99c4fc6a-41e0-47fa-a9f9-e902f49d0f44")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1004T5E"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5406747c-9013-4509-ad59-c78e2acb9e1d")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -11051,6 +11350,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "TPS7A2030PDBVR"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cda2978e-e8e7-4c7a-ac00-75b50570e138")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part #" "C963429"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4c41dcba-a7b6-4b81-a681-4ed06e931f9d")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -12677,7 +13002,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221127_UNI-ROYAL-Uniroyal-Elec-0603WAF2202T5E_C31850.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12690,7 +13015,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "100mW Thick Film Resistors 75V ±100ppm/℃ ±1% 22kΩ 0603 Chip Resistor - Surface Mount ROHS"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12699,6 +13024,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part #" "C31850"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2944d738-2570-41a4-bc55-bd225ef911b9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "0603WAF2202T5E"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2b8874b0-8e8f-4c84-8125-a075b0bff549")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -12912,7 +13263,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221127_UNI-ROYAL-Uniroyal-Elec-0603WAF2202T5E_C31850.pdf"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12925,7 +13276,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "100mW Thick Film Resistors 75V ±100ppm/℃ ±1% 22kΩ 0603 Chip Resistor - Surface Mount ROHS"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12934,6 +13285,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part #" "C31850"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3be15847-77f0-4e4e-9ac8-6b992e4caa6a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "0603WAF2202T5E"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "623864bd-c258-404b-bdb4-5932426b6953")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -13356,6 +13733,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part #" "C13738"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fbc50c35-f52b-4e60-ae99-f7600485819a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "X322516MLB4SI"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1441acd6-50e7-41b2-830d-209bd9d61903")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -16640,6 +17043,32 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C20917"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "96a83e07-b9af-49ea-8e62-27908a6d7fd7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "AO3400A"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "19509d44-e6bb-40c5-81a5-7e8543e08a7e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/f8f87cfe-571f-4a92-acee-79776e4ce004/657c61e0-5c66-4ccd-9034-83442a47d87f")
 		(sheetname "Power circuits")
@@ -16914,7 +17343,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0603WAF5102T5E_C23196.pdf"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16927,7 +17356,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "100mW Thick Film Resistors 75V ±100ppm/℃ ±1% 51kΩ 0603 Chip Resistor - Surface Mount ROHS"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16936,6 +17365,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part #" "C23196"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cba8bac1-fc2e-4a8c-b7b1-afb12baf3b49")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "0603WAF5102T5E"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f4a9e203-d38c-4987-b654-c2052766022f")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -17149,7 +17604,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B102KB8NNNC_C1588.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17162,7 +17617,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "50V 1nF X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17171,6 +17626,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part #" "C1588"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5e9bee22-7d41-4f34-ba8b-90a828a9de3a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CL10B102KB8NNNC"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0fc08bd2-4cbe-43bc-9f72-241e26b821ad")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -18797,6 +19278,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part #" "C8791"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f0591850-b719-4212-aaad-f89ad0391869")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "NRF24L01P-R"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "61ed7654-d14d-4b7d-931c-d69f72fbb05b")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -23867,7 +24374,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_HQ_Low_ESR_HH.pdf"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23880,7 +24387,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "1 pF ±0.1pF 50V Ceramic Capacitor C0G, NP0 0603 (1608 Metric)"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23889,6 +24396,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "HH18N1R0B500CT"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fa3a2006-42c1-4984-bb1b-785ce66661c4")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -24102,7 +24622,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://productfinder.pulseelectronics.com/api/open/part-attachments/datasheet/BSCQ000603033N9B00"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -24115,7 +24635,7 @@
 				)
 			)
 		)
-		(property "Description" "Inductor"
+		(property "Description" "3.9 nH Unshielded Multilayer Inductor 350 mA 410mOhm Max 0201 (0603 Metric)"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -24124,6 +24644,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "BSCQ000603033N9B00"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "883fbf5e-57b6-48dd-90e1-7f4ece30350b")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)

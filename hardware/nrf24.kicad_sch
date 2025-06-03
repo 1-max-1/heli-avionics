@@ -2765,6 +2765,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C57112"
+			(at 100.33 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603B103K500NT"
+			(at 100.33 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "60c396c3-4cd8-48a1-a939-6b59e003a716")
 		)
@@ -2829,6 +2847,24 @@
 			)
 		)
 		(property "Description" "nRF24L01+, Ultra low power 2.4GHz RF Transceiver, QFN20 4x4mm"
+			(at 133.35 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C8791"
+			(at 133.35 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "NRF24L01P-R"
 			(at 133.35 100.33 0)
 			(effects
 				(font
@@ -2942,7 +2978,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "http://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_HQ_Low_ESR_HH.pdf"
 			(at 196.85 104.14 0)
 			(effects
 				(font
@@ -2951,7 +2987,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "1 pF ±0.1pF 50V Ceramic Capacitor C0G, NP0 0603 (1608 Metric)"
+			(at 196.85 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "HH18N1R0B500CT"
 			(at 196.85 104.14 0)
 			(effects
 				(font
@@ -3075,7 +3120,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221127_UNI-ROYAL-Uniroyal-Elec-0603WAF2202T5E_C31850.pdf"
 			(at 110.49 107.95 0)
 			(effects
 				(font
@@ -3084,8 +3129,26 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "100mW Thick Film Resistors 75V ±100ppm/℃ ±1% 22kΩ 0603 Chip Resistor - Surface Mount ROHS"
 			(at 110.49 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF2202T5E"
+			(at 110.49 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C31850"
+			(at 110.49 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3276,7 +3339,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "http://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_HQ_Low_ESR_HH.pdf"
 			(at 187.96 100.33 0)
 			(effects
 				(font
@@ -3285,8 +3348,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "1.5 pF ±0.1pF 50V Ceramic Capacitor C0G, NP0 0603 (1608 Metric)"
 			(at 187.96 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "HH18N1R5B500CT"
+			(at 187.96 100.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3434,7 +3506,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://productfinder.pulseelectronics.com/api/open/part-attachments/datasheet/BSCQ000603032N7B00"
 			(at 156.21 88.9 0)
 			(effects
 				(font
@@ -3443,7 +3515,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Inductor"
+		(property "Description" "2.7 nH Unshielded Multilayer Inductor 400 mA 320mOhm Max 0201 (0603 Metric)"
+			(at 156.21 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "BSCQ000603032N7B00"
 			(at 156.21 88.9 0)
 			(effects
 				(font
@@ -3504,7 +3585,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0603WAF1004T5E_C22935.pdf"
 			(at 176.53 110.49 0)
 			(effects
 				(font
@@ -3513,7 +3594,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "100mW Thick Film Resistors 75V ±100ppm/℃ ±1% 1MΩ 0603 Chip Resistor - Surface Mount ROHS"
+			(at 176.53 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C22935"
+			(at 176.53 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1004T5E"
 			(at 176.53 110.49 0)
 			(effects
 				(font
@@ -3573,7 +3672,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411220213_FH--Guangdong-Fenghua-Advanced-Tech-0603CG4R7C500NT_C1669.pdf"
 			(at 179.07 76.2 0)
 			(effects
 				(font
@@ -3582,7 +3681,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "50V 4.7pF C0G 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 179.07 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C1669"
+			(at 179.07 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603CG4R7C500NT"
 			(at 179.07 76.2 0)
 			(effects
 				(font
@@ -3641,7 +3758,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://productfinder.pulseelectronics.com/api/open/part-attachments/datasheet/BSCQ000603033N9B00"
 			(at 170.18 100.33 0)
 			(effects
 				(font
@@ -3650,8 +3767,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Inductor"
+		(property "Description" "3.9 nH Unshielded Multilayer Inductor 350 mA 410mOhm Max 0201 (0603 Metric)"
 			(at 170.18 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "BSCQ000603033N9B00"
+			(at 170.18 100.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4040,7 +4166,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2005141203_YAGEO-CC0603FRNPO9BN120_C519482.pdf"
 			(at 185.42 121.92 0)
 			(effects
 				(font
@@ -4049,7 +4175,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "50V 12pF NP0 ±1% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 185.42 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603FRNPO9BN120"
+			(at 185.42 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C519482"
 			(at 185.42 121.92 0)
 			(effects
 				(font
@@ -4125,6 +4269,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C13738"
+			(at 162.56 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "X322516MLB4SI"
+			(at 162.56 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "299b260e-2695-4eda-a380-bbfe8d3cec22")
 		)
@@ -4182,7 +4344,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411220213_FH--Guangdong-Fenghua-Advanced-Tech-0603B222K500NT_C1604.pdf"
 			(at 172.72 76.2 0)
 			(effects
 				(font
@@ -4191,7 +4353,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "50V 2.2nF X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 172.72 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C1604"
+			(at 172.72 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603B222K500NT"
 			(at 172.72 76.2 0)
 			(effects
 				(font
@@ -4251,7 +4431,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2005141203_YAGEO-CC0603FRNPO9BN120_C519482.pdf"
 			(at 176.53 121.92 0)
 			(effects
 				(font
@@ -4260,7 +4440,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "50V 12pF NP0 ±1% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 176.53 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C519482"
+			(at 176.53 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603FRNPO9BN120"
 			(at 176.53 121.92 0)
 			(effects
 				(font
@@ -4321,7 +4519,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://productfinder.pulseelectronics.com/api/open/part-attachments/datasheet/BSCQ000603038N2H00"
 			(at 156.21 96.52 0)
 			(effects
 				(font
@@ -4330,7 +4528,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Inductor"
+		(property "Description" "8.2 nH Unshielded Multilayer Inductor 290 mA 570mOhm Max 0201 (0603 Metric)"
+			(at 156.21 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "BSCQ000603038N2H00"
 			(at 156.21 96.52 0)
 			(effects
 				(font
@@ -4390,7 +4597,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B333KB8NNNC_C21117.pdf"
 			(at 114.3 116.84 0)
 			(effects
 				(font
@@ -4399,7 +4606,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "50V 33nF X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 114.3 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C21117"
+			(at 114.3 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL10B333KB8NNNC"
 			(at 114.3 116.84 0)
 			(effects
 				(font
@@ -4526,7 +4751,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B102KB8NNNC_C1588.pdf"
 			(at 113.03 73.66 0)
 			(effects
 				(font
@@ -4535,7 +4760,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "50V 1nF X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 113.03 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C1588"
+			(at 113.03 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL10B102KB8NNNC"
 			(at 113.03 73.66 0)
 			(effects
 				(font
