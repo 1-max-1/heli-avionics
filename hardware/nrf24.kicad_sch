@@ -780,7 +780,7 @@
 				)
 			)
 		)
-		(symbol "RF:nRF24L01P"
+		(symbol "heli_symbols:NRF24L01P"
 			(pin_names
 				(offset 1.016)
 			)
@@ -796,7 +796,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "nRF24L01P"
+			(property "Value" "NRF24L01P"
 				(at 5.08 17.78 0)
 				(effects
 					(font
@@ -805,7 +805,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm"
+			(property "Footprint" "heli-footprints:NRF24L01_HandSolder_SpecialPad"
 				(at 5.08 20.32 0)
 				(effects
 					(font
@@ -816,7 +816,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.nordicsemi.com/eng/content/download/2726/34069/file/nRF24L01P_Product_Specification_1_0.pdf"
+			(property "Datasheet" "https://cdn.sparkfun.com/assets/3/d/8/5/1/nRF24L01P_Product_Specification_1_0.pdf"
 				(at 0 2.54 0)
 				(effects
 					(font
@@ -825,7 +825,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "nRF24L01+, Ultra low power 2.4GHz RF Transceiver, QFN20 4x4mm"
+			(property "Description" "Ultra low power 2 Mbps 2.4GHz RF Transceiver, QFN-20"
 				(at 0 0 0)
 				(effects
 					(font
@@ -852,7 +852,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "nRF24L01P_0_1"
+			(symbol "NRF24L01P_0_1"
 				(rectangle
 					(start -11.43 16.51)
 					(end 11.43 -16.51)
@@ -935,7 +935,7 @@
 					)
 				)
 			)
-			(symbol "nRF24L01P_1_1"
+			(symbol "NRF24L01P_1_1"
 				(pin input line
 					(at -15.24 0 0)
 					(length 3.81)
@@ -1063,7 +1063,7 @@
 					)
 				)
 				(pin passive line
-					(at -15.24 -7.62 0)
+					(at -15.24 -6.35 0)
 					(length 3.81)
 					(name "IREF"
 						(effects
@@ -1117,7 +1117,7 @@
 					)
 				)
 				(pin power_out line
-					(at -15.24 -12.7 0)
+					(at -15.24 -10.16 0)
 					(length 3.81)
 					(name "DVDD"
 						(effects
@@ -1163,6 +1163,24 @@
 						)
 					)
 					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at -5.08 -20.32 90)
+					(length 3.81)
+					(name "PAD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1522,10 +1540,22 @@
 		(uuid "15129b7a-8d2f-4849-9756-a8fbc98106c3")
 	)
 	(junction
+		(at 135.89 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2318d83a-977b-4a6e-946e-ff84e78caa0c")
+	)
+	(junction
 		(at 156.21 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "24ba39dc-8a10-4893-abdf-f4e566c5df28")
+	)
+	(junction
+		(at 130.81 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3c70e337-8549-4188-92d1-ff2ad52e8fe1")
 	)
 	(junction
 		(at 86.36 69.85)
@@ -1550,12 +1580,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6fb15b63-78ee-4b3f-8975-22ff686556d3")
-	)
-	(junction
-		(at 133.35 120.65)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "72054c57-8271-401d-a989-e727ab0ce0b1")
 	)
 	(junction
 		(at 176.53 105.41)
@@ -1606,12 +1630,6 @@
 		(uuid "ab71ab03-adb5-443f-b4cc-17b2d215005c")
 	)
 	(junction
-		(at 135.89 120.65)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bbc5f845-a2e6-42b3-a527-0e7ad4a41fa8")
-	)
-	(junction
 		(at 113.03 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1624,10 +1642,10 @@
 		(uuid "c2f96fcd-6140-4d21-8c78-6cbae2a397a0")
 	)
 	(junction
-		(at 130.81 120.65)
+		(at 133.35 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c5dd485d-d20f-4691-8d51-4c62316e6101")
+		(uuid "c4ce38ec-f2bd-45df-9575-41fec3cbc3a2")
 	)
 	(junction
 		(at 72.39 77.47)
@@ -1773,6 +1791,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 120.65) (xy 138.43 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2de538cd-417c-4a80-8116-29833a987a71")
+	)
+	(wire
+		(pts
 			(xy 72.39 77.47) (xy 86.36 77.47)
 		)
 		(stroke
@@ -1873,16 +1901,6 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 120.65) (xy 138.43 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5b4f492b-069d-4d39-9d30-682005150120")
-	)
-	(wire
-		(pts
 			(xy 149.86 107.95) (xy 149.86 105.41)
 		)
 		(stroke
@@ -1923,16 +1941,6 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 120.65) (xy 133.35 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6dfc0202-088f-4b6b-81cd-c8f563e0d36d")
-	)
-	(wire
-		(pts
 			(xy 176.53 115.57) (xy 176.53 114.3)
 		)
 		(stroke
@@ -1963,7 +1971,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 120.65) (xy 130.81 124.46)
+			(xy 133.35 120.65) (xy 133.35 124.46)
 		)
 		(stroke
 			(width 0)
@@ -2003,7 +2011,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 107.95) (xy 118.11 107.95)
+			(xy 114.3 106.68) (xy 118.11 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2093,6 +2101,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 110.49) (xy 114.3 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2fecf02-6bfd-44d9-a824-bd556621c11e")
+	)
+	(wire
+		(pts
 			(xy 60.96 77.47) (xy 72.39 77.47)
 		)
 		(stroke
@@ -2103,7 +2121,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 107.95) (xy 104.14 107.95)
+			(xy 106.68 106.68) (xy 104.14 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2133,6 +2151,16 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 120.65) (xy 130.81 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0773f5f-b3a1-4ac8-a8fe-6e6e795cd6ad")
+	)
+	(wire
+		(pts
 			(xy 114.3 95.25) (xy 118.11 95.25)
 		)
 		(stroke
@@ -2153,7 +2181,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 113.03) (xy 118.11 113.03)
+			(xy 114.3 110.49) (xy 118.11 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2163,7 +2191,17 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 107.95) (xy 104.14 124.46)
+			(xy 133.35 120.65) (xy 135.89 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2aadc2b-f12d-4a0e-854d-6b58bd021d44")
+	)
+	(wire
+		(pts
+			(xy 104.14 106.68) (xy 104.14 124.46)
 		)
 		(stroke
 			(width 0)
@@ -2213,13 +2251,13 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 120.65) (xy 135.89 120.65)
+			(xy 133.35 120.65) (xy 130.81 120.65)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f4471ad1-ab89-4b55-83f2-5e375df70f80")
+		(uuid "f2d8f173-2e81-4a30-bdec-cbbfa9c4f04f")
 	)
 	(wire
 		(pts
@@ -2799,150 +2837,6 @@
 		)
 	)
 	(symbol
-		(lib_id "RF:nRF24L01P")
-		(at 133.35 100.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3a5c77f9-a4d6-49a5-825a-875e7d5645a3")
-		(property "Reference" "U2"
-			(at 138.0841 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "nRF24L01P"
-			(at 138.0841 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "heli-footprints:NRF24L01_HandSolder_SpecialPad"
-			(at 138.43 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.sparkfun.com/datasheets/Components/SMD/nRF24L01Pluss_Preliminary_Product_Specification_v1_0.pdf"
-			(at 133.35 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "nRF24L01+, Ultra low power 2.4GHz RF Transceiver, QFN20 4x4mm"
-			(at 133.35 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C8791"
-			(at 133.35 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "NRF24L01P-R"
-			(at 133.35 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "11"
-			(uuid "8ecfc4c6-89d6-43f5-a5a9-b9c0ca5deb34")
-		)
-		(pin "10"
-			(uuid "782edaa0-7657-4cbb-8d04-467f8e0fb968")
-		)
-		(pin "5"
-			(uuid "1127e032-3427-412e-a4b6-5b3dea3397dd")
-		)
-		(pin "6"
-			(uuid "97b4312e-acde-4c78-a725-2afdca136a41")
-		)
-		(pin "16"
-			(uuid "42a94a17-7328-4f0b-a4cd-e7676756bd9b")
-		)
-		(pin "15"
-			(uuid "9d91c7a9-84c6-4e95-b190-3088f98b9ed7")
-		)
-		(pin "19"
-			(uuid "cf86a2d9-9432-4f7b-9a86-1b5735b7d577")
-		)
-		(pin "20"
-			(uuid "42590863-49ff-46af-9773-bafb714b8a4c")
-		)
-		(pin "3"
-			(uuid "ddb452e7-4d71-4a85-9733-b9ae413f1041")
-		)
-		(pin "17"
-			(uuid "ffc750cc-dbbb-4cdc-aa29-07afbe54a3ae")
-		)
-		(pin "9"
-			(uuid "93c7d728-6635-471c-9560-35077557d80f")
-		)
-		(pin "18"
-			(uuid "6d69036a-aa3e-4de9-b583-bc11117ab90a")
-		)
-		(pin "4"
-			(uuid "d1c5818c-1cb6-40e5-af62-c9bf1559c727")
-		)
-		(pin "14"
-			(uuid "003b152f-ebd7-4578-8986-669cdf1ad7be")
-		)
-		(pin "12"
-			(uuid "025245b6-4f50-477d-b503-c9338baed7de")
-		)
-		(pin "7"
-			(uuid "dfd846f8-289b-4a6f-9ed8-252fbb7cc5de")
-		)
-		(pin "8"
-			(uuid "9eded0ec-cca5-4a9e-a93d-0ac95ce8aada")
-		)
-		(pin "13"
-			(uuid "2379130d-8483-4a06-9382-79328682bb09")
-		)
-		(pin "2"
-			(uuid "9063b76d-092d-4ed2-971b-baafb38a3fc4")
-		)
-		(pin "1"
-			(uuid "c3c3973f-9908-4a4b-91c1-f34b49069d9e")
-		)
-		(instances
-			(project "heli_avionics"
-				(path "/c384ea46-0dfb-4673-b2f4-1f88fafbcaa5/0b31be65-dd8f-4cfe-9626-c0e264a9ba4c"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 196.85 104.14 0)
 		(unit 1)
@@ -3021,6 +2915,135 @@
 		)
 	)
 	(symbol
+		(lib_id "heli_symbols:NRF24L01P")
+		(at 133.35 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "46ea2f24-4f4d-4ba9-8480-910728e48fc8")
+		(property "Reference" "U2"
+			(at 138.0841 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NRF24L01P"
+			(at 138.0841 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "heli-footprints:NRF24L01_HandSolder_SpecialPad"
+			(at 138.43 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.sparkfun.com/assets/3/d/8/5/1/nRF24L01P_Product_Specification_1_0.pdf"
+			(at 133.35 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ultra low power 2 Mbps 2.4GHz RF Transceiver, QFN-20"
+			(at 133.35 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1861b3f5-4c05-44b0-b7f0-72bd58c3e9be")
+		)
+		(pin "4"
+			(uuid "2f18db00-103c-4dec-8de9-9a08f06c66f7")
+		)
+		(pin "21"
+			(uuid "c8ceddb0-ce99-4332-901f-ba2af2629a2c")
+		)
+		(pin "7"
+			(uuid "f62c338c-e6a6-42be-ac54-de646ec1e2cd")
+		)
+		(pin "6"
+			(uuid "f07621bd-eaa6-4442-85f7-df6343804e94")
+		)
+		(pin "10"
+			(uuid "65864618-e15c-44cc-b49e-f725a3650e0b")
+		)
+		(pin "1"
+			(uuid "10669a6a-32c9-48da-9fb2-3bbf73fb20a2")
+		)
+		(pin "18"
+			(uuid "65b2ded4-7dc6-42c0-9ea4-05765e7b46ab")
+		)
+		(pin "9"
+			(uuid "a9ec9034-e114-4876-a0dc-193a2ee33c91")
+		)
+		(pin "17"
+			(uuid "5880d45e-8883-44a9-bebc-3cfacf7e4e1a")
+		)
+		(pin "5"
+			(uuid "e10bacfc-54e8-4a9d-b98a-028ef5040e95")
+		)
+		(pin "15"
+			(uuid "d779a490-1fec-4bb6-8a17-d2b86376215f")
+		)
+		(pin "12"
+			(uuid "67891689-27f8-43a7-977a-1ed5dd740f91")
+		)
+		(pin "14"
+			(uuid "ad074674-92d5-4a2f-b54c-4be789801c5b")
+		)
+		(pin "19"
+			(uuid "818e587a-b702-42fa-a12d-1c3e395db146")
+		)
+		(pin "8"
+			(uuid "92de408d-2da4-4470-a26c-1941f99ccab0")
+		)
+		(pin "16"
+			(uuid "4253d00e-22aa-45e6-96e9-158e7320ae0f")
+		)
+		(pin "11"
+			(uuid "f4242dd7-91ff-46d4-bf58-d37e1ed58317")
+		)
+		(pin "20"
+			(uuid "6f9802ac-9960-46cc-bba6-ed9f9af1632d")
+		)
+		(pin "13"
+			(uuid "f67a534c-a080-436c-9cb0-46ae2e09f221")
+		)
+		(pin "3"
+			(uuid "da04bae3-56fc-4c2f-a623-cfacb540ccee")
+		)
+		(instances
+			(project ""
+				(path "/c384ea46-0dfb-4673-b2f4-1f88fafbcaa5/0b31be65-dd8f-4cfe-9626-c0e264a9ba4c"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 168.91 110.49 90)
 		(unit 1)
@@ -3088,7 +3111,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 110.49 107.95 90)
+		(at 110.49 106.68 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3096,7 +3119,7 @@
 		(dnp no)
 		(uuid "59286a8d-1387-497f-955b-430eea53ea43")
 		(property "Reference" "R3"
-			(at 109.22 110.49 90)
+			(at 109.22 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3104,7 +3127,7 @@
 			)
 		)
 		(property "Value" "22k"
-			(at 109.728 112.776 90)
+			(at 109.728 111.506 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3112,7 +3135,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 110.49 109.728 90)
+			(at 110.49 108.458 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3121,7 +3144,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221127_UNI-ROYAL-Uniroyal-Elec-0603WAF2202T5E_C31850.pdf"
-			(at 110.49 107.95 0)
+			(at 110.49 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3130,7 +3153,7 @@
 			)
 		)
 		(property "Description" "100mW Thick Film Resistors 75V ±100ppm/℃ ±1% 22kΩ 0603 Chip Resistor - Surface Mount ROHS"
-			(at 110.49 107.95 0)
+			(at 110.49 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3139,7 +3162,7 @@
 			)
 		)
 		(property "MPN" "0603WAF2202T5E"
-			(at 110.49 107.95 90)
+			(at 110.49 106.68 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3148,7 +3171,7 @@
 			)
 		)
 		(property "LCSC Part #" "C31850"
-			(at 110.49 107.95 90)
+			(at 110.49 106.68 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3802,7 +3825,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 130.81 124.46 0)
+		(at 133.35 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3811,7 +3834,7 @@
 		(fields_autoplaced yes)
 		(uuid "7f534587-8734-4f85-8bcb-ab32683e48be")
 		(property "Reference" "#PWR014"
-			(at 130.81 130.81 0)
+			(at 133.35 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3820,7 +3843,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 130.81 129.54 0)
+			(at 133.35 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3828,7 +3851,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 130.81 124.46 0)
+			(at 133.35 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3837,7 +3860,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 124.46 0)
+			(at 133.35 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3846,7 +3869,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 130.81 124.46 0)
+			(at 133.35 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
