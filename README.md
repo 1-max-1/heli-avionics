@@ -41,10 +41,12 @@ TODO
 
 Will use platformIO, c++
 
-# Background
+# Why?
 I found this helicopter in an e-waste center. The remote was missing and the electronics inside of it seemed to be slightly burnt. 
 
-Image
+| <img src="https://github.com/user-attachments/assets/891b460c-87d6-47ac-b79f-f41f9f45c5fe" alt="Description" width="70%"> | 
+|:--:| 
+| *Disassembled helicopter on test stand* |
 
 After taking it apart and relubricating all the shafts and gears, I tested the motors and they still seemed to work fine.
 I decided it would be fun to fix it up and make my own controller for it.
