@@ -1,5 +1,5 @@
 # heli-avionics
-This repository contains the electronics and software for a flight controller. This controller is designed to run a coaxial helicopter using brushed DC motors.
+This repository contains the electronics and software for a flight controller. This controller is designed to run a coaxial helicopter using brushed DC motors. I had to learn alot for this project, as there were several things I had no experience with, such as the radio transciever circuitry. However it was fun to make and I think the pcb turned out well.
 
 <img src="https://github.com/user-attachments/assets/528543c5-ad05-44f8-a49a-dd642d59fcf7" alt="Description" width="70%">
 
