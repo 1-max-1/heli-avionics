@@ -2387,7 +2387,7 @@
 		(at 207.01 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -2733,6 +2733,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "CL10A226MQ8NRNC"
+			(at 86.36 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d49acb55-a9c9-4f36-9edb-d1d0baa29f62")
 		)
@@ -2963,6 +2972,24 @@
 			)
 		)
 		(property "Description" "Ultra low power 2 Mbps 2.4GHz RF Transceiver, QFN-20"
+			(at 133.35 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C8791"
+			(at 133.35 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "NRF24L01P-R"
 			(at 133.35 100.33 0)
 			(effects
 				(font

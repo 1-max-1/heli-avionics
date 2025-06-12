@@ -116,7 +116,6 @@
 			(dielectric_constraints no)
 		)
 		(pad_to_mask_clearance 0)
-		(solder_mask_min_width 0.1)
 		(allow_soldermask_bridges_in_footprints no)
 		(pcbplotparams
 			(layerselection 0x00010fc_ffffffff)
@@ -1675,7 +1674,7 @@
 		(path "/f8f87cfe-571f-4a92-acee-79776e4ce004/199eb76c-c5df-45aa-b989-720e5e6a4f34")
 		(sheetname "Power circuits")
 		(sheetfile "batt_power.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start -1.11 -2.11)
 			(end -2.36 -2.11)
@@ -2196,7 +2195,7 @@
 		(path "/f8f87cfe-571f-4a92-acee-79776e4ce004/ac2ffb8e-410a-44c8-ab5d-3f33f34b4078")
 		(sheetname "Power circuits")
 		(sheetfile "batt_power.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -2.7 -2.45)
 			(end -2.7 2.45)
@@ -2595,7 +2594,7 @@
 		(path "/9f001f4a-3360-45af-8cda-b4c57930f5db")
 		(sheetname "Root")
 		(sheetfile "heli_avionics.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start -1.33 3.87)
 			(end 1.33 3.87)
@@ -3116,7 +3115,7 @@
 				)
 			)
 		)
-		(property "DigiKey_Part_Number" "828-BMP390LTR-ND"
+		(property "LCSC Part #" "C2684802"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3129,38 +3128,12 @@
 				)
 			)
 		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/BMP390L/Bosch/view-part/?ref=snap"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "536ec796-7aa5-4690-abcc-4d3da76e1669")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC Part #" "C2684802"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a7c18518-554b-4f32-b68e-2a7d786aa206")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "MPN" "BMP390L"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "345f3729-47a2-4b3f-9ddf-b3ebb88cbe51")
+			(uuid "536ec796-7aa5-4690-abcc-4d3da76e1669")
 			(effects
 				(font
 					(size 1 1)
@@ -4324,7 +4297,7 @@
 		(path "/e66d27d0-3506-42a3-bb0e-923c7c751e41/ff3ccb8c-ca29-442a-9764-25afe430d786")
 		(sheetname "Motor Drivers")
 		(sheetfile "motors.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start -2.85 -2.75)
 			(end -2.85 -1.5)
@@ -5549,7 +5522,7 @@
 		(path "/f8f87cfe-571f-4a92-acee-79776e4ce004/f1e09a75-ed93-4e52-a32a-7219da8a335b")
 		(sheetname "Power circuits")
 		(sheetfile "batt_power.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.95)
@@ -5655,6 +5628,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part #" "C8791"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "beed663e-efb2-4954-9495-4c35533519d0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "NRF24L01P-R"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0b58df71-1d0f-458d-80c3-8abd35b9ee82")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -6769,7 +6768,7 @@
 		(path "/04158ece-7a02-4460-8a47-621e02e2398c")
 		(sheetname "Root")
 		(sheetfile "heli_avionics.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start 2.86 1.26)
 			(end 2.86 -2.16)
@@ -7973,7 +7972,7 @@
 		(path "/f8f87cfe-571f-4a92-acee-79776e4ce004/adc36613-38bd-4851-98b4-cce4071d83cc")
 		(sheetname "Power circuits")
 		(sheetfile "batt_power.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.95)
@@ -8350,7 +8349,7 @@
 		(path "/e66d27d0-3506-42a3-bb0e-923c7c751e41/bc0b1985-e56d-415e-bba3-95ca9e7420d4")
 		(sheetname "Motor Drivers")
 		(sheetfile "motors.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start -1.6 -2.75)
 			(end -2.85 -2.75)
@@ -9059,7 +9058,7 @@
 		(path "/e66d27d0-3506-42a3-bb0e-923c7c751e41/c88a426e-9778-43cb-9fd3-8912d2633ab2")
 		(sheetname "Motor Drivers")
 		(sheetfile "motors.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start -1.11 -2.11)
 			(end -2.36 -2.11)
@@ -9790,7 +9789,7 @@
 		(path "/f8f87cfe-571f-4a92-acee-79776e4ce004/f91bffa1-534e-4f57-929f-28d023a53d77")
 		(sheetname "Power circuits")
 		(sheetfile "batt_power.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -0.95 -0.95)
 			(end 0.95 -0.95)
@@ -11362,7 +11361,7 @@
 		(path "/0b31be65-dd8f-4cfe-9626-c0e264a9ba4c/000dfbf1-437a-43c3-b3b9-494a1d252f8b")
 		(sheetname "Radio")
 		(sheetfile "nrf24.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -1.8 -1.55)
 			(end -1.8 1.55)
@@ -11522,7 +11521,7 @@
 		(path "/f8f87cfe-571f-4a92-acee-79776e4ce004/5d864fd9-c278-4e9c-aadb-14da34df37e7")
 		(sheetname "Power circuits")
 		(sheetfile "batt_power.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -2.7 -2.45)
 			(end -2.7 2.45)
@@ -11682,7 +11681,7 @@
 		(path "/9c3c5c1a-bd53-46c9-b2be-6683a7c1e73d")
 		(sheetname "Root")
 		(sheetfile "heli_avionics.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start -1.33 -1.33)
 			(end 0 -1.33)
@@ -12299,6 +12298,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f8883b39-d670-4c72-92e2-0fc8199dfda6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CL10A226MQ8NRNC"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8181a8a3-055a-43e1-b6c4-36ce5531699a")
 			(effects
 				(font
 					(size 1 1)
@@ -14137,7 +14149,7 @@
 		(path "/f8f87cfe-571f-4a92-acee-79776e4ce004/6b533597-dd6f-4bff-b62b-8befc8bf8a15")
 		(sheetname "Power circuits")
 		(sheetfile "batt_power.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -0.95 -0.95)
 			(end 0.95 -0.95)
@@ -14920,7 +14932,7 @@
 		(path "/e66d27d0-3506-42a3-bb0e-923c7c751e41/32cca481-3e8a-405c-a772-aaca28386f45")
 		(sheetname "Motor Drivers")
 		(sheetfile "motors.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start -2.250241 -1.839)
 			(end -1.620241 -1.839)
@@ -21014,7 +21026,7 @@
 				)
 			)
 		)
-		(property "Description" "25mA 67mcd~195mcd -30℃~+85℃ 615nm~630nm Independent Diode Red 130° 65mW 1.6V~2.6V 0805 LED Indication - Discrete ROHS"
+		(property "Description" "Red 25mA 67mcd~195mcd -30℃~+85℃ 615nm~630nm Independent Diode Red 130° 65mW 1.6V~2.6V 0805 LED Indication - Discrete ROHS"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -21023,19 +21035,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Color" "Red"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "26b9155f-1c35-4f22-9c12-38b7a5c96576")
-			(effects
-				(font
-					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -21353,7 +21352,7 @@
 		(path "/e66d27d0-3506-42a3-bb0e-923c7c751e41/911a157f-e3d6-4514-8b29-ce23f6ccdf7c")
 		(sheetname "Motor Drivers")
 		(sheetfile "motors.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start 7.581 -0.599)
 			(end 7.581 0.599)
@@ -23445,7 +23444,7 @@
 		(path "/420e4727-1168-4390-a5bd-618973c9f114")
 		(sheetname "Root")
 		(sheetfile "heli_avionics.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start -1.33 6.41)
 			(end 3.87 6.41)

@@ -3594,7 +3594,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "04158ece-7a02-4460-8a47-621e02e2398c")
@@ -4269,7 +4269,7 @@
 		(at 120.65 45.72 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "420e4727-1168-4390-a5bd-618973c9f114")
@@ -5037,16 +5037,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "25mA 67mcd~195mcd -30℃~+85℃ 615nm~630nm Independent Diode Red 130° 65mW 1.6V~2.6V 0805 LED Indication - Discrete ROHS"
-			(at 255.27 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Color" "Red"
+		(property "Description" "Red 25mA 67mcd~195mcd -30℃~+85℃ 615nm~630nm Independent Diode Red 130° 65mW 1.6V~2.6V 0805 LED Indication - Discrete ROHS"
 			(at 255.27 76.2 0)
 			(effects
 				(font
@@ -5329,7 +5320,7 @@
 		(at 247.65 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "9c3c5c1a-bd53-46c9-b2be-6683a7c1e73d")
@@ -5395,7 +5386,7 @@
 		(at 105.41 111.76 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
