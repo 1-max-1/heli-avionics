@@ -1,0 +1,34 @@
+﻿Designator,Quantity,Value,Footprint,Package,MPN,DNP,Mount_Type,Description,LCSC Part #
+"C1, C15, C16, C17, C18, C19, C2, C20, C21, C22, C25, C26, C30, C31, C4, C5, C6",17,22uF,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,,CL10A226MQ8NRNC,,smt,6.3V 22uF X5R ±20% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,C59461
+C10,1,2.2nF,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,,0603B222K500NT,,smt,50V 2.2nF X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,C1604
+"C11, C9",2,12pF,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,,CC0603FRNPO9BN120,,smt,50V 12pF NP0 ±1% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,C519482
+C12,1,4.7pF,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,,0603CG4R7C500NT,,smt,50V 4.7pF C0G 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,C1669
+C13,1,1.5pF,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,,HH18N1R5B500CT,,smt,"1.5 pF ±0.1pF 50V Ceramic Capacitor C0G, NP0 0603 (1608 Metric)",
+C14,1,1pF,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,,HH18N1R0B500CT,,smt,"1 pF ±0.1pF 50V Ceramic Capacitor C0G, NP0 0603 (1608 Metric)",
+C27,1,1nF,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,,CL10B102KB8NNNC,Yes,smt,50V 1nF X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,C1588
+C28,1,100nF,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,,CC0603KRX7R9BB104,,smt,50V 100nF X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,C14663
+C3,1,100nF,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,,CC0603KRX7R9BB104,Yes,smt,50V 100nF X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,C14663
+C7,1,33nF,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,,CL10B333KB8NNNC,,smt,50V 33nF X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,C21117
+C8,1,10nF,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,,0603B103K500NT,Yes,smt,Unpolarized capacitor,C57112
+D2,1,NCD0805R1,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,,NCD0805R1,,smt,Red 25mA 67mcd~195mcd -30℃~+85℃ 615nm~630nm Independent Diode Red 130° 65mW 1.6V~2.6V 0805 LED Indication - Discrete ROHS,C84256
+L1,1,2.7nH,L_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,BSCQ000603032N7B00,,smt,2.7 nH Unshielded Multilayer Inductor 400 mA 320mOhm Max 0201 (0603 Metric),
+L2,1,8.2nH,L_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,BSCQ000603038N2H00,,smt,8.2 nH Unshielded Multilayer Inductor 290 mA 570mOhm Max 0201 (0603 Metric),
+L3,1,3.9nH,L_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,BSCQ000603033N9B00,,smt,3.9 nH Unshielded Multilayer Inductor 350 mA 410mOhm Max 0201 (0603 Metric),
+Q1,1,AO3400A,SOT-23,,AO3400A,,smt,"30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23",C20917
+R1,1,33k,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,0603WAF3302T5E,,smt,100mW Thick Film Resistors 75V ±100ppm/℃ ±1% 33kΩ 0603 Chip Resistor - Surface Mount ROHS,C4216
+R10,1,100R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,0805W8F1000T5E,,smt,125mW Thick Film Resistors 150V ±100ppm/℃ ±1% 100Ω 0805 Chip Resistor - Surface Mount ROHS,C17408
+R11,1,470R,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,0603WAF4700T5E,,smt,100mW Thick Film Resistors 75V ±100ppm/℃ ±1% 470Ω 0603 Chip Resistor - Surface Mount ROHS,C23179
+"R12, R13",2,4k7,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,0603WAF4701T5E,,smt,100mW Thick Film Resistors 75V ±100ppm/℃ ±1% 4.7kΩ 0603 Chip Resistor - Surface Mount ROHS,C23162
+R2,1,330R,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,0603WAF3300T5E,,smt,100mW Thick Film Resistors 75V ±100ppm/℃ ±1% 330Ω 0603 Chip Resistor - Surface Mount ROHS,C23138
+"R3, R5, R6",3,22k,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,0603WAF2202T5E,,smt,100mW Thick Film Resistors 75V ±100ppm/℃ ±1% 22kΩ 0603 Chip Resistor - Surface Mount ROHS,C31850
+R4,1,1M,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,0603WAF1004T5E,,smt,100mW Thick Film Resistors 75V ±100ppm/℃ ±1% 1MΩ 0603 Chip Resistor - Surface Mount ROHS,C22935
+R7,1,150R,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,0603WAF1500T5E,,smt,100mW Thick Film Resistors 75V ±100ppm/℃ ±1% 150Ω 0603 Chip Resistor - Surface Mount ROHS,C22808
+R8,1,51k,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,0603WAF5102T5E,,smt,100mW Thick Film Resistors 75V ±100ppm/℃ ±1% 51kΩ 0603 Chip Resistor - Surface Mount ROHS,C23196
+R9,1,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,0805W8F680JT5E,,smt,125mW Thick Film Resistors 150V ±1% ±200ppm/℃ 68Ω 0805 Chip Resistor - Surface Mount ROHS,C17802
+SW1,1,Reset,SW_Push_SPST_NO_Alps_SKRK,,SKRKAEE020,,smt,2.9mm 2mm Round Button 50mA Vertical welding 3.9mm SPST 12V SMD Tactile Switches ROHS,C115357
+U1,1,ATmega4808-A,TQFP-32_7x7mm_P0.8mm,,ATMEGA4808-AFR,,smt,"AVR Microcontroller, 20MHz, 48kB Flash, 6kB SRAM, 256B EEPROM, TQFP-32",C2052755
+U2,1,NRF24L01P,QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm,,NRF24L01P-R,,smt,"Ultra low power 2 Mbps 2.4GHz RF Transceiver, QFN-20",C8791
+"U3, U4, U8",3,DRV8212,WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm_ThermalVias,,DRV8212DSGR,,smt,"H-Bridge driver, 4A, Low Voltage, PWM input, Half Bridge Mode, Low-Power Sleep Mode, WSON-8",C2843766
+U5,1,BMP390L,BMP390L LGA 2.0x2.0 mm,,BMP390L,,smt,"24-bit barometric pressure sensor, low-noise, low-power.",C2684802
+"U6, U7",2,TPS7A2030PDBV,SOT-23-5_HandSoldering,,TPS7A2030PDBVR,,smt,"300-mA Ultra-Low-Noise Low-IQ, High PSRR LDO, 3.0V, SOT-23",C963429
+Y1,1,16MHz,Crystal_SMD_3225-4Pin_3.2x2.5mm,,X322516MLB4SI,,smt,"Four pin crystal, 16MHz, X322516MLB4SI",C13738
