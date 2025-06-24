@@ -27,7 +27,7 @@ I have also broken out an I2C line and a spare GPIO to another pin header in cas
 
 **Radio**
 
-All the cool kids have remote control, so of course this board includes a rf transciever. I used an `nrf24l01`. Like the MCU, this is not fancy but there's alot of documentation for it and I'd rather start with something easier because my rf knowledge is limited (for now).
+This board includes a rf transciever: `nrf24l01`. Like the MCU, this is not fancy but there's alot of documentation for it and I'd rather start with something easier because my rf knowledge is limited (for now).
 The board contains an impedance matching network to match the transceiver output to 50 ohms. A wire antenna is used because it should give the best range and I dont have space for a PCB antenna or any bulky connectors like SMA. The antenna will also have to be tuned by cutting it to a specific length. I think UC has network analyzers which could help with this...
 
 **Power regulation**
