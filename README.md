@@ -1,5 +1,5 @@
 # heli-avionics
-This repository contains the electronics and software for a flight controller. This controller is designed to run a coaxial helicopter using brushed DC motors. I had to learn alot for this project, as there were several things I had no experience with, such as the radio transciever circuitry. However it was fun to make and I think the pcb turned out well.
+This repository contains the electronics and software for a flight controller. This controller is designed to run a coaxial helicopter using brushed DC motors. I had to learn alot for this project, as there were several things I had no experience with, such as the radio transceiver circuitry. However it was fun to make and I think the pcb turned out well.
 
 <img src="https://github.com/user-attachments/assets/528543c5-ad05-44f8-a49a-dd642d59fcf7" alt="Description" width="70%">
 
@@ -13,7 +13,7 @@ This repository contains the electronics and software for a flight controller. T
 The system uses three `DRV8212` BDC motor drivers to drive the tail and coaxial propellors. Some analysis shows that these chips should handle the current demands while remaining below maximum safe temperatures.
 The motor driver circuit also includes significant bulk capacitance to handle large spikes in motor current.
 
-The first design of the motor driver circuit used 1 driver chip for both motors. However after more testing I found that the motors drew more current than expected when at full power. This was over the maximum limit of the motor driver chip. Initially, I started looking for replacement chips with better capabilities. However, the options were either too big, unavailable or could not operate at the voltage I wanted. Eventually I realised this was the wrong way to go about it and decided to have another look at the original drivers. I discovered that if the 2 outputs on the chip were joined together, this would effectively double the maximum current, which was now sufficient for these motors. However, this solution does require 2 driver ships instead of one. I initially had concerns about space on the board, but after many hours of rearranging and rerouting I found a way to fit both parts on the board.
+The first design of the motor driver circuit used 1 driver chip for both motors. However after more testing, I found that the motors drew more current than expected when at full power. This was over the maximum limit of the motor driver chip. Initially, I started looking for replacement chips with better capabilities. However, the options were either too big, unavailable or could not operate at the voltage I wanted. Eventually, I realised this was the wrong way to go about it and decided to have another look at the original drivers. I discovered that if the 2 outputs on the chip were joined together, this would effectively double the maximum current, which was now sufficient for these motors. However, this solution does require 2 driver chips instead of one. I initially had concerns about space on the board, but after many hours of rearranging and rerouting I found a way to fit both parts on the board.
 
 **MCU**
 
@@ -27,7 +27,7 @@ I have also broken out an I2C line and a spare GPIO to another pin header in cas
 
 **Radio**
 
-This board includes a rf transciever: `nrf24l01`. Like the MCU, this is not fancy but there's alot of documentation for it and I'd rather start with something easier because my rf knowledge is limited (for now).
+This board includes a rf transceiver: `nrf24l01`. Like the MCU, this is not fancy but there's alot of documentation for it and I'd rather start with something easier because my rf knowledge is limited (for now).
 The board contains an impedance matching network to match the transceiver output to 50 ohms. A wire antenna is used because it should give the best range and I dont have space for a PCB antenna or any bulky connectors like SMA. The antenna will also have to be tuned by cutting it to a specific length. I think UC has network analyzers which could help with this...
 
 **Power regulation**
