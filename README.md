@@ -1,11 +1,33 @@
 # heli-avionics
-This repository contains the electronics and software for a flight controller. This controller is designed to run a coaxial helicopter using brushed DC motors. I had to learn alot for this project, as there were several things I had no experience with, such as the radio transceiver circuitry. However it was fun to make and I think the pcb turned out well.
+This repository contains the electronics and software for a flight controller. This controller is designed to run a coaxial helicopter using brushed DC motors. The board contains an rf transciever chip for wireless communication with a remote.
+
+I had to learn alot for this project, as there were several things I had no experience with such as the radio transceiver circuitry. In the end, it turned out well and was very fun to make.
 
 <img src="https://github.com/user-attachments/assets/528543c5-ad05-44f8-a49a-dd642d59fcf7" alt="Description" width="70%">
 
 ![Image](https://github.com/user-attachments/assets/3179f312-4448-4294-99f2-64587d49be68)
 
-⚠ *Note: the software is still in progress, only the electronics have been completed. Additionally, I have not yet ordered the parts so do not have a real photo - for now, please see the 3d-render above.*
+⚠ *Note: the software is still in progress, only the electronics have been completed.*
+
+# PCBWay
+The PCB was fabricated and assembled by [PCBWay](https://www.pcbway.com/). I’m impressed with how it turned out, and I’ve written a short review below based on my experience working with them.
+
+#### PCB Quality
+The finished PCB looks and feels excellent. The boards appear durable and well-made, with solid electrical connectivity throughout. Silkscreen print is sharp and clear, and the overall finish gives off a professional feel.
+
+#### Assembly Quality
+Assembly was just as good. All components were placed with precision, aligned nicely with their pads, and the soldering was clean — no excess, no bridges, and everything stayed neatly within the boundaries.
+
+#### Communication & Support
+Working with PCBWay was a smooth experience. They were professional and quick to respond to any questions I had. One thing I really appreciated was their communication before making any key decisions. For example:
+- They double-checked with me before sourcing alternative components.
+- When a part was unavailable, they suggested alternatives instead of just swapping it.
+- After assembly, the quality control team contacted me about the orientation of a particular component, just to be sure, as the markings were slightly ambiguous.
+
+#### Pricing & Turnaround
+Pricing was fair, especially considering the quality and the support included. Quoting and sourcing components was made easy — PCBWay handled that for me, which saved a lot of time. Once everything was confirmed, shipping was fast and the boards arrived well-packed.
+
+Overall, I'm happy with the result and wouldn’t hesitate to use PCBWay again in future projects. If you’re looking for a PCB manufacturer that’s reliable, responsive, and produces high-quality results — they’re worth checking out.
 
 # Electronics
 **Motor drivers**
@@ -52,6 +74,3 @@ I found this helicopter in an e-waste center. The remote was missing and the ele
 
 After taking it apart and relubricating all the shafts and gears, I tested the motors and they still seemed to work fine.
 I decided it would be fun to fix it up and make my own controller for it.
-
-# PCBWay
-The PCB manufacture and assembly is going to be sponsored by PCBWay. I will move and update this section with a review once the process is complete.
