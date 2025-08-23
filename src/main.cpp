@@ -8,7 +8,7 @@
 #define BMP_MOSI 11
 #define BMP_CS 10
 
-#define SEALEVELPRESSURE_HPA (1013.25)
+#define SEALEVELPRESSURE_HPA (1033)
 
 Adafruit_BMP3XX bmp;
 
@@ -42,26 +42,23 @@ float getVoltage() {
 	return (float)(analogRead(BATT_DIVIDER) * 2) * 2.998f / 1023.0f;
 }
 
-/*void loop() {
-	// digitalWrite(LED_BUILTIN, HIGH);
-	// delay(1000);
-	// digitalWrite(LED_BUILTIN, LOW);
-	// delay(1000);
-
-	digitalWrite(BATT_DIVIDER_EN, HIGH);
-	delay(10);
-	Serial.println(getVoltage());
-
-	delay(1000);
-
-	digitalWrite(BATT_DIVIDER_EN, LOW);
-	delay(10);
-	Serial.println(getVoltage());
-	Serial.println();
-
-	delay(1000);
-}*/
-
 void loop() {
-	
+	if (! bmp.performReading()) {
+		Serial.println("Failed to perform reading :(");
+		return;
+	}
+	Serial.print("Temperature = ");
+	Serial.print(bmp.temperature);
+	Serial.println(" *C");
+
+	Serial.print("Pressure = ");
+	Serial.print(bmp.pressure / 100.0);
+	Serial.println(" hPa");
+
+	Serial.print("Approx. Altitude = ");
+	Serial.print(bmp.readAltitude(SEALEVELPRESSURE_HPA));
+	Serial.println(" m");
+
+	Serial.println();
+	delay(2000);
 }
