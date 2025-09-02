@@ -5,9 +5,7 @@ I had to learn alot for this project, as there were several things I had no expe
 
 <img src="https://github.com/user-attachments/assets/528543c5-ad05-44f8-a49a-dd642d59fcf7" alt="Description" width="70%">
 
-![Image](https://github.com/user-attachments/assets/3179f312-4448-4294-99f2-64587d49be68)
-
-⚠ *Note: the software is still in progress, only the electronics have been completed.*
+<img src="https://github.com/user-attachments/assets/826d150f-704d-4b0d-ae0a-3626e9c626cb" alt="Assembled pcb" width="70%">
 
 # PCBWay
 The PCB was fabricated and assembled by [PCBWay](https://www.pcbway.com/). I’m impressed with how it turned out, and I’ve written a short review below based on my experience working with them.
