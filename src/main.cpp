@@ -24,6 +24,21 @@ Adafruit_BMP3XX bmp;
 
 void setupMotorDrivers();
 
+void tailMotor(uint8_t val, bool forward) {
+	register8_t& compareRegister = forward ? TCA0.SPLIT.HCMP0 : TCA0.SPLIT.HCMP1;
+	register8_t& otherRegister = !forward ? TCA0.SPLIT.HCMP0 : TCA0.SPLIT.HCMP1;
+	otherRegister = 0;
+	compareRegister = val;
+}
+
+void topMotor(uint8_t val) {
+	TCA0.SPLIT.LCMP2 = val;
+}
+
+void bottomMotor(uint8_t val) {
+	TCA0.SPLIT.LCMP0 = val;
+}
+
 void setup() {
 	pinMode(BATT_DIVIDER_EN, OUTPUT);
 	digitalWrite(BATT_DIVIDER_EN, HIGH);
@@ -47,21 +62,19 @@ void setup() {
 	bmp.setOutputDataRate(BMP3_ODR_50_HZ);
 
 	setupMotorDrivers();
-
-	// Reroute event output D pin to PD7
-	PORTMUX.EVSYSROUTEA |= PORTMUX_EVOUT3_bm;
-	// Route TCA0 compare events onto event channel 5
-	//EVSYS.CHANNEL5 = EVSYS_GENERATOR_TCA0_CMP0_gc;
-	// Route PF0 state onto event channel 5
-	EVSYS.CHANNEL5 = EVSYS_GENERATOR_PORT1_PIN0_gc;
-	// Connect event output D pin to channel 5
-	EVSYS.USEREVOUTD = EVSYS_CHANNEL_CHANNEL5_gc;
+	//tailMotor(100, true);
+	//digitalWrite(REAR_PROP_PWM1, HIGH);
+	digitalWrite(PIN_PF4, LOW);
+	//TCA0.SPLIT.HCMP0 = 100;
 }
 
 void setupMotorDrivers() {
 	// Will set PWM frequency to 31.25 kHz.
 	// Note: clock divider will be 2 and TCA0 is setup in 8-bit split mode
 	analogWriteFrequency(32);
+	// Set max (TOP) value back to 255, so we can get up to 99.6% duty cycle.
+	// By default it is set to 254 which causes a bug: when we write 255 to the compare register, the PWM output completely dissapears because now a match and toggle never happens.
+	TCA0.SPLIT.LPER = TCA0.SPLIT.HPER = 255;
 
 	pinMode(TOP_PROP_MODE, INPUT);
 	pinMode(TOP_PROP_PWM, OUTPUT);
@@ -75,7 +88,18 @@ void setupMotorDrivers() {
 	// Set TCA0 compare value to zero for now so there is no output
 	TCA0.SPLIT.LCMP0 = TCA0.SPLIT.LCMP1 = TCA0.SPLIT.LCMP2 = TCA0.SPLIT.HCMP0 = TCA0.SPLIT.HCMP1 = TCA0.SPLIT.HCMP2 = 0;
 	// Enable PWM output on motor GPIOs
-	TCA0.SPLIT.CTRLB |= TCA_SPLIT_HCMP0EN_bm | TCA_SPLIT_HCMP1EN_bm | TCA_SPLIT_LCMP2EN_bm | TCA_SPLIT_LCMP0EN_bm;
+	//TCA0.SPLIT.CTRLB = TCA_SPLIT_HCMP0EN_bm | TCA_SPLIT_HCMP1EN_bm | TCA_SPLIT_LCMP2EN_bm | TCA_SPLIT_LCMP0EN_bm;
+	TCA0.SPLIT.CTRLB = 0;//TCA_SPLIT_HCMP0EN_bm;
+
+	// I accidentally wired the bottom motor to PD7, but that isnt connected to TCA0.
+	// So actually we use TCA0 on PF0 as normal but then reroute through the event system peripheral back to PD7.
+
+	// Route PF0 state onto event channel 5
+	EVSYS.CHANNEL5 = EVSYS_GENERATOR_PORT1_PIN0_gc;
+	// Connect event output D pin to channel 5
+	EVSYS.USEREVOUTD = EVSYS_CHANNEL_CHANNEL5_gc;
+	// Reroute event output D pin to PD7
+	PORTMUX.EVSYSROUTEA |= PORTMUX_EVOUT3_bm;
 }
 
 float getVoltage() {
@@ -103,29 +127,22 @@ float getVoltage() {
 	delay(2000);
 }*/
 
-void tailMotor(uint8_t val, bool forward) {
-	register8_t& compareRegister = forward ? TCA0.SPLIT.HCMP0 : TCA0.SPLIT.HCMP1;
-	register8_t& otherRegister = !forward ? TCA0.SPLIT.HCMP0 : TCA0.SPLIT.HCMP1;
-	otherRegister = 0;
-	compareRegister = val;
-}
-
-void topMotor(uint8_t val) {
-	TCA0.SPLIT.LCMP2 = val;
-}
-
-void bottomMotor(uint8_t val) {
-	TCA0.SPLIT.LCMP0 = val;
-}
+unsigned long lastToggle = 0;
+bool lastState = 0;
 
 void loop() {
-	if (Serial.available()) {
+	/*if (Serial.available()) {
 		int pwm = Serial.parseInt();
 		if (pwm != 0) {
 			if (pwm == -1)
 				pwm == 0;
-			bottomMotor(pwm);
-			analogWrite(12, 128);
+			//tailMotor(pwm, true);
 		}
+	}*/
+
+	if (micros() - lastToggle >= 10) {
+		lastState = !lastState;
+		digitalWriteFast(PIN_PF3, lastState);
+		lastToggle = micros();
 	}
 }
