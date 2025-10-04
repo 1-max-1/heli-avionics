@@ -15,6 +15,15 @@ Adafruit_BMP3XX bmp;
 #define BATT_DIVIDER_EN PIN_PD1
 #define BATT_DIVIDER PIN_PD2
 
+#define TOP_PROP_MODE PIN_PF1
+#define TOP_PROP_PWM PIN_PF2
+#define BOTTOM_PROP_MODE PIN_PD6
+#define BOTTOM_PROP_PWM PIN_PD7
+#define REAR_PROP_PWM1 PIN_PF3
+#define REAR_PROP_PWM2 PIN_PF4
+
+void setupMotorDrivers();
+
 void setup() {
 	pinMode(BATT_DIVIDER_EN, OUTPUT);
 	digitalWrite(BATT_DIVIDER_EN, HIGH);
@@ -26,7 +35,7 @@ void setup() {
 	pinMode(LED_BUILTIN, OUTPUT);
 	digitalWrite(LED_BUILTIN, HIGH);
 
-	if (!bmp.begin_I2C()) {   // hardware I2C mode, can pass in address & alt Wire
+	if (!bmp.begin_I2C()) {
 		Serial.println("Could not find a valid BMP3 sensor, check wiring!");
 		while (1);
 	}
@@ -36,13 +45,44 @@ void setup() {
 	bmp.setPressureOversampling(BMP3_OVERSAMPLING_4X);
 	bmp.setIIRFilterCoeff(BMP3_IIR_FILTER_COEFF_3);
 	bmp.setOutputDataRate(BMP3_ODR_50_HZ);
+
+	setupMotorDrivers();
+
+	// Reroute event output D pin to PD7
+	PORTMUX.EVSYSROUTEA |= PORTMUX_EVOUT3_bm;
+	// Route TCA0 compare events onto event channel 5
+	//EVSYS.CHANNEL5 = EVSYS_GENERATOR_TCA0_CMP0_gc;
+	// Route PF0 state onto event channel 5
+	EVSYS.CHANNEL5 = EVSYS_GENERATOR_PORT1_PIN0_gc;
+	// Connect event output D pin to channel 5
+	EVSYS.USEREVOUTD = EVSYS_CHANNEL_CHANNEL5_gc;
+}
+
+void setupMotorDrivers() {
+	// Will set PWM frequency to 31.25 kHz.
+	// Note: clock divider will be 2 and TCA0 is setup in 8-bit split mode
+	analogWriteFrequency(32);
+
+	pinMode(TOP_PROP_MODE, INPUT);
+	pinMode(TOP_PROP_PWM, OUTPUT);
+	pinMode(BOTTOM_PROP_MODE, INPUT);
+	pinMode(BOTTOM_PROP_PWM, OUTPUT);
+	pinMode(REAR_PROP_PWM1, OUTPUT);
+	pinMode(REAR_PROP_PWM2, OUTPUT);
+	pinMode(PIN_PF0, OUTPUT);
+
+	PORTMUX.TCAROUTEA = PORTMUX_TCA0_PORTF_gc; // Re-reoute TCA0 to PORTF
+	// Set TCA0 compare value to zero for now so there is no output
+	TCA0.SPLIT.LCMP0 = TCA0.SPLIT.LCMP1 = TCA0.SPLIT.LCMP2 = TCA0.SPLIT.HCMP0 = TCA0.SPLIT.HCMP1 = TCA0.SPLIT.HCMP2 = 0;
+	// Enable PWM output on motor GPIOs
+	TCA0.SPLIT.CTRLB |= TCA_SPLIT_HCMP0EN_bm | TCA_SPLIT_HCMP1EN_bm | TCA_SPLIT_LCMP2EN_bm | TCA_SPLIT_LCMP0EN_bm;
 }
 
 float getVoltage() {
 	return (float)(analogRead(BATT_DIVIDER) * 2) * 2.998f / 1023.0f;
 }
 
-void loop() {
+/*void loop() {
 	if (! bmp.performReading()) {
 		Serial.println("Failed to perform reading :(");
 		return;
@@ -61,4 +101,31 @@ void loop() {
 
 	Serial.println();
 	delay(2000);
+}*/
+
+void tailMotor(uint8_t val, bool forward) {
+	register8_t& compareRegister = forward ? TCA0.SPLIT.HCMP0 : TCA0.SPLIT.HCMP1;
+	register8_t& otherRegister = !forward ? TCA0.SPLIT.HCMP0 : TCA0.SPLIT.HCMP1;
+	otherRegister = 0;
+	compareRegister = val;
+}
+
+void topMotor(uint8_t val) {
+	TCA0.SPLIT.LCMP2 = val;
+}
+
+void bottomMotor(uint8_t val) {
+	TCA0.SPLIT.LCMP0 = val;
+}
+
+void loop() {
+	if (Serial.available()) {
+		int pwm = Serial.parseInt();
+		if (pwm != 0) {
+			if (pwm == -1)
+				pwm == 0;
+			bottomMotor(pwm);
+			analogWrite(12, 128);
+		}
+	}
 }
