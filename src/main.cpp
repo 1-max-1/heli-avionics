@@ -61,21 +61,6 @@ void setup() {
 	bmp.setIIRFilterCoeff(BMP3_IIR_FILTER_COEFF_3);
 	bmp.setOutputDataRate(BMP3_ODR_50_HZ);
 
-	setupMotorDrivers();
-	//tailMotor(100, true);
-	//digitalWrite(REAR_PROP_PWM1, HIGH);
-	digitalWrite(PIN_PF4, LOW);
-	//TCA0.SPLIT.HCMP0 = 100;
-}
-
-void setupMotorDrivers() {
-	// Will set PWM frequency to 31.25 kHz.
-	// Note: clock divider will be 2 and TCA0 is setup in 8-bit split mode
-	analogWriteFrequency(32);
-	// Set max (TOP) value back to 255, so we can get up to 99.6% duty cycle.
-	// By default it is set to 254 which causes a bug: when we write 255 to the compare register, the PWM output completely dissapears because now a match and toggle never happens.
-	TCA0.SPLIT.LPER = TCA0.SPLIT.HPER = 255;
-
 	pinMode(TOP_PROP_MODE, INPUT);
 	pinMode(TOP_PROP_PWM, OUTPUT);
 	pinMode(BOTTOM_PROP_MODE, INPUT);
@@ -84,12 +69,33 @@ void setupMotorDrivers() {
 	pinMode(REAR_PROP_PWM2, OUTPUT);
 	pinMode(PIN_PF0, OUTPUT);
 
+	setupMotorDrivers();
+
+	// Bring tail motor driver out of sleep mode
+	// Other 2 drivers cannot go into sleep mode while the mode pin is high-Z
+	digitalWriteFast(PIN_PF4, HIGH);
+	digitalWriteFast(PIN_PF3, HIGH);
+	delay(1);
+	// Enable PWM output on motor GPIOs
+	TCA0.SPLIT.CTRLB = TCA_SPLIT_HCMP0EN_bm | TCA_SPLIT_HCMP1EN_bm | TCA_SPLIT_LCMP2EN_bm | TCA_SPLIT_LCMP0EN_bm;
+
+	topMotor(200);
+	bottomMotor(200);
+	tailMotor(200, true);
+}
+
+void setupMotorDrivers() {
+	// Will set PWM frequency to 31.25 kHz.
+	// Note: clock divider will be 2 and TCA0 is setup in 8-bit split mode
+	analogWriteFrequency(32);
+
+	// Set max (TOP) value back to 255, so we can get up to 99.6% duty cycle.
+	// By default it is set to 254 which causes a bug: when we write 255 to the compare register, the PWM output completely dissapears because now a match and toggle never happens.
+	TCA0.SPLIT.LPER = TCA0.SPLIT.HPER = 255;
+
 	PORTMUX.TCAROUTEA = PORTMUX_TCA0_PORTF_gc; // Re-reoute TCA0 to PORTF
 	// Set TCA0 compare value to zero for now so there is no output
 	TCA0.SPLIT.LCMP0 = TCA0.SPLIT.LCMP1 = TCA0.SPLIT.LCMP2 = TCA0.SPLIT.HCMP0 = TCA0.SPLIT.HCMP1 = TCA0.SPLIT.HCMP2 = 0;
-	// Enable PWM output on motor GPIOs
-	//TCA0.SPLIT.CTRLB = TCA_SPLIT_HCMP0EN_bm | TCA_SPLIT_HCMP1EN_bm | TCA_SPLIT_LCMP2EN_bm | TCA_SPLIT_LCMP0EN_bm;
-	TCA0.SPLIT.CTRLB = 0;//TCA_SPLIT_HCMP0EN_bm;
 
 	// I accidentally wired the bottom motor to PD7, but that isnt connected to TCA0.
 	// So actually we use TCA0 on PF0 as normal but then reroute through the event system peripheral back to PD7.
@@ -131,18 +137,18 @@ unsigned long lastToggle = 0;
 bool lastState = 0;
 
 void loop() {
-	/*if (Serial.available()) {
+	if (Serial.available()) {
 		int pwm = Serial.parseInt();
 		if (pwm != 0) {
 			if (pwm == -1)
 				pwm == 0;
-			//tailMotor(pwm, true);
+			tailMotor(pwm, true);
 		}
-	}*/
+	}
 
-	if (micros() - lastToggle >= 10) {
+	/*if (micros() - lastToggle >= 1) {
 		lastState = !lastState;
 		digitalWriteFast(PIN_PF3, lastState);
 		lastToggle = micros();
-	}
+	}*/
 }
