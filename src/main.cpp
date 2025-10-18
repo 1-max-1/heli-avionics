@@ -3,11 +3,6 @@
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BMP3XX.h>
 
-#define BMP_SCK 13
-#define BMP_MISO 12
-#define BMP_MOSI 11
-#define BMP_CS 10
-
 #define SEALEVELPRESSURE_HPA (1033)
 
 Adafruit_BMP3XX bmp;
@@ -71,17 +66,24 @@ void setup() {
 
 	setupMotorDrivers();
 
-	// Bring tail motor driver out of sleep mode
-	// Other 2 drivers cannot go into sleep mode while the mode pin is high-Z
-	digitalWriteFast(PIN_PF4, HIGH);
-	digitalWriteFast(PIN_PF3, HIGH);
+	// Bring motor drivers out of sleep mode
+	digitalWriteFast(REAR_PROP_PWM1, HIGH);
+	digitalWriteFast(REAR_PROP_PWM2, HIGH);
+	digitalWriteFast(TOP_PROP_PWM, HIGH);
+	digitalWriteFast(PIN_PF0, HIGH);
 	delay(1);
 	// Enable PWM output on motor GPIOs
 	TCA0.SPLIT.CTRLB = TCA_SPLIT_HCMP0EN_bm | TCA_SPLIT_HCMP1EN_bm | TCA_SPLIT_LCMP2EN_bm | TCA_SPLIT_LCMP0EN_bm;
 
 	topMotor(200);
 	bottomMotor(200);
-	tailMotor(200, true);
+	
+	//tailMotor(200, false);
+	// TODO: modify tailmotor() to use brake mode instead of coast mode, as this fixes that motor speed issue.
+	// These 3 lines do PWM with brake mode
+	TCA0.SPLIT.CTRLB &= ~TCA_SPLIT_HCMP0EN_bm;
+	digitalWriteFast(REAR_PROP_PWM1, HIGH);
+	TCA0.SPLIT.HCMP1 = 50;
 }
 
 void setupMotorDrivers() {
