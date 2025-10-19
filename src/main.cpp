@@ -1,7 +1,10 @@
 #include <Arduino.h>
 #include <Wire.h>
+#include <SPI.h>
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BMP3XX.h>
+#include <RF24.h>
+#include <printf.h>
 
 #define SEALEVELPRESSURE_HPA (1033)
 
@@ -16,6 +19,13 @@ Adafruit_BMP3XX bmp;
 #define BOTTOM_PROP_PWM PIN_PD7
 #define REAR_PROP_PWM1 PIN_PF3
 #define REAR_PROP_PWM2 PIN_PF4
+
+#define NRF24_CE PIN_PD0
+#define NRF24_CS PIN_PC3
+RF24 radio(NRF24_CE, NRF24_CS);
+
+const byte* txAddress = (const byte*)"aviTX";
+const byte* rxAddress = (const byte*)"aviRX";
 
 void setupMotorDrivers();
 
@@ -34,6 +44,8 @@ void bottomMotor(uint8_t val) {
 	TCA0.SPLIT.LCMP0 = val;
 }
 
+unsigned long timeOfLastSend = 0;
+
 void setup() {
 	pinMode(BATT_DIVIDER_EN, OUTPUT);
 	digitalWrite(BATT_DIVIDER_EN, HIGH);
@@ -41,6 +53,7 @@ void setup() {
 	pinMode(BATT_DIVIDER, INPUT);
 
 	Serial.begin(9600);
+	printf_begin();
 
 	pinMode(LED_BUILTIN, OUTPUT);
 	digitalWrite(LED_BUILTIN, HIGH);
@@ -84,6 +97,16 @@ void setup() {
 	TCA0.SPLIT.CTRLB &= ~TCA_SPLIT_HCMP0EN_bm;
 	digitalWriteFast(REAR_PROP_PWM1, HIGH);
 	TCA0.SPLIT.HCMP1 = 50;
+
+	SPI.swap(1);
+	if (!radio.begin()) {
+		Serial.println("Failed to start radio!");
+		while (true) ;
+	}
+	radio.openWritingPipe(txAddress);
+	radio.openReadingPipe(1, rxAddress);
+	radio.setPALevel(RF24_PA_MAX);
+	radio.startListening();
 }
 
 void setupMotorDrivers() {
@@ -139,18 +162,12 @@ unsigned long lastToggle = 0;
 bool lastState = 0;
 
 void loop() {
-	if (Serial.available()) {
-		int pwm = Serial.parseInt();
-		if (pwm != 0) {
-			if (pwm == -1)
-				pwm == 0;
-			tailMotor(pwm, true);
-		}
-	}
+	if (radio.available()) {
+    char buf[7];
+    radio.read(buf, 7);
+    Serial.println(buf);
+	//radio.printPrettyDetails();
+  }
 
-	/*if (micros() - lastToggle >= 1) {
-		lastState = !lastState;
-		digitalWriteFast(PIN_PF3, lastState);
-		lastToggle = micros();
-	}*/
+  delay(10);
 }
