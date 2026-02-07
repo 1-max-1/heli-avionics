@@ -11,6 +11,8 @@ void FlightController::setup() {
 	Serial.println((unsigned long)sizeof(uint16_t));
 	Serial.println((unsigned long)sizeof(uint32_t));
 	Serial.println((unsigned long)sizeof(int32_t));
+
+	altimeter.init();
 }
 
 void FlightController::loop() {
@@ -33,9 +35,9 @@ void FlightController::swapState(HeliState newState) {
 }
 
 void FlightController::oneSecondTaskAdapter() {
-	HeliTasks::oneSecondTask(*this, currentState);
+	HeliTasks::oneSecondTask(altimeter);
 }
 
 void FlightController::threePerSecondTaskAdapter() {
-	HeliTasks::threePerSecondTask(currentState);
+	HeliTasks::threePerSecondTask(altimeter);
 }

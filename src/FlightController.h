@@ -4,6 +4,7 @@
 
 #include "states.h"
 #include "IStateOwner.h"
+#include "altimeter/Altimeter.h"
 
 // Main program class, contains state variables and task scheduling
 class FlightController : public IStateOwner {
@@ -34,4 +35,6 @@ private:
 	};
 
 	HeliState currentState = HeliState::PAD;
+
+	Altimeter altimeter;
 };
