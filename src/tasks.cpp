@@ -1,18 +1,15 @@
 #include "tasks.h"
 
 #include <Arduino.h>
+#include "packets.h"
 
-void HeliTasks::oneSecondTask(Altimeter& altimeter) {
-	Serial.print("Altimeter reading: ");
-	Serial.print(altimeter.getAltitude());
-	Serial.print("    Stable: ");
-	Serial.println(altimeter.isStable());
-
-	if (Serial.available()) {
-		while (Serial.available())
-			Serial.read();
-		Serial.println("taring");
-		altimeter.tare();
+void HeliTasks::oneSecondTask(Radio& radio) {
+	while (radio.packetAvailable()) {
+		PacketContainer pkt = radio.read();
+		if (pkt.type == PacketType::THROTTLE) {
+			Serial.print("Throttle: ");
+			Serial.println(pkt.data.throttlePacket.verticalThrottle);
+		}
 	}
 }
 

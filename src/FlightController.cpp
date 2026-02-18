@@ -13,6 +13,7 @@ void FlightController::setup() {
 	Serial.println((unsigned long)sizeof(int32_t));
 
 	altimeter.init();
+	radio.init();
 }
 
 void FlightController::loop() {
@@ -35,7 +36,7 @@ void FlightController::swapState(HeliState newState) {
 }
 
 void FlightController::oneSecondTaskAdapter() {
-	HeliTasks::oneSecondTask(altimeter);
+	HeliTasks::oneSecondTask(radio);
 }
 
 void FlightController::threePerSecondTaskAdapter() {
