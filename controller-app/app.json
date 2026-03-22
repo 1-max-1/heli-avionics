@@ -3,7 +3,7 @@
     "name": "controller-app",
     "slug": "controller-app",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "landscape",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
@@ -28,7 +28,8 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "react-native-ble-plx"
+      "react-native-ble-plx",
+      "./withShortCmakePath.js"
     ]
   }
 }
