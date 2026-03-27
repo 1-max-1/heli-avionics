@@ -3,66 +3,69 @@ import { StyleSheet, View, Text, Pressable, StatusBar } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { AxisPad, AxisPadTouchEvent } from '@fustaro/react-native-axis-pad';
 import { GestureHandlerRootView } from "react-native-gesture-handler";
+import { BLEProvider } from './BLEProvider';
 
 export default function App() {
 	return (
 		<SafeAreaView style={styles.container}>
 			<StatusBar hidden />
 			
-			<View style={styles.topRow}>
-				<View style={styles.topLeftGroup}>
-					<Pressable style={styles.rssiItem}>
-						<Text style={styles.btnText}>RSSI: -30dBm</Text>
-					</Pressable>
-					<Pressable style={styles.rssiItem}>
-						<Text style={styles.btnText}>RSSI: -42dBm</Text>
-					</Pressable>
-				</View>
-
-				<View style={styles.statusBox}>
-					<Text style={styles.altitudeLabel}>23.3m</Text>
-					<Text style={styles.statusLabel}>FLYING</Text>
-				</View>
-
-				<View style={styles.topRightGroup}>
-					<View style={styles.batteryBox}>
-						<Text style={styles.btnText}>B: 3.75V</Text>
-					</View>
-					<Pressable style={styles.menuButton}>
-						<Text style={styles.btnText}>{'{'}</Text>
-					</Pressable>
-				</View>
-			</View>
-
-			<View style={styles.bottomRow}>
-				<GestureHandlerRootView style={styles.noFlex}>
-					<AxisPad id="throttle-pad" size={185} controlSize={70} onTouchEvent={() => 1} disableX={true} resetOnRelease={false} />
-				</GestureHandlerRootView>
-				
-				<View style={styles.middleActionBtns}>
-					<View style={styles.middleActionBtnsRow}>
-						<Pressable style={styles.appButtonContainer}>
-							<Text style={styles.btnText}>HOVER</Text>
+			<BLEProvider>
+				<View style={styles.topRow}>
+					<View style={styles.topLeftGroup}>
+						<Pressable style={styles.rssiItem}>
+							<Text style={styles.btnText}>RSSI: -30dBm</Text>
 						</Pressable>
-						<Pressable style={styles.appButtonContainer}>
-							<Text style={styles.btnText}>LAND</Text>
+						<Pressable style={styles.rssiItem}>
+							<Text style={styles.btnText}>RSSI: -42dBm</Text>
 						</Pressable>
 					</View>
 
-					<View style={styles.middleActionBtnsRow}>
-						<Pressable style={styles.appButtonContainer}>
-							<Text style={styles.btnText}>LIGHTS</Text>
-						</Pressable>
-						<Pressable style={styles.appButtonContainer}>
-							<Text style={styles.btnText}>ALT. TARE</Text>
+					<View style={styles.statusBox}>
+						<Text style={styles.altitudeLabel}>23.3m</Text>
+						<Text style={styles.statusLabel}>FLYING</Text>
+					</View>
+
+					<View style={styles.topRightGroup}>
+						<View style={styles.batteryBox}>
+							<Text style={styles.btnText}>B: 3.75V</Text>
+						</View>
+						<Pressable style={styles.menuButton}>
+							<Text style={styles.btnText}>{'{'}</Text>
 						</Pressable>
 					</View>
 				</View>
 
-				<GestureHandlerRootView style={styles.noFlex}>
-					<AxisPad id="directional-pad" size={170} controlSize={70} onTouchEvent={() => 1} />
-				</GestureHandlerRootView>
-			</View>
+				<View style={styles.bottomRow}>
+					<GestureHandlerRootView style={styles.noFlex}>
+						<AxisPad id="throttle-pad" size={185} controlSize={70} onTouchEvent={() => 1} disableX={true} resetOnRelease={false} />
+					</GestureHandlerRootView>
+					
+					<View style={styles.middleActionBtns}>
+						<View style={styles.middleActionBtnsRow}>
+							<Pressable style={styles.appButtonContainer}>
+								<Text style={styles.btnText}>HOVER</Text>
+							</Pressable>
+							<Pressable style={styles.appButtonContainer}>
+								<Text style={styles.btnText}>LAND</Text>
+							</Pressable>
+						</View>
+
+						<View style={styles.middleActionBtnsRow}>
+							<Pressable style={styles.appButtonContainer}>
+								<Text style={styles.btnText}>LIGHTS</Text>
+							</Pressable>
+							<Pressable style={styles.appButtonContainer}>
+								<Text style={styles.btnText}>ALT. TARE</Text>
+							</Pressable>
+						</View>
+					</View>
+
+					<GestureHandlerRootView style={styles.noFlex}>
+						<AxisPad id="directional-pad" size={170} controlSize={70} onTouchEvent={() => 1} />
+					</GestureHandlerRootView>
+				</View>
+			</BLEProvider>
 
 		</SafeAreaView>
 	);

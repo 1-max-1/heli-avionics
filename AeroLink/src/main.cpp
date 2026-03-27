@@ -31,6 +31,13 @@ class CharacteristicCallbacks : public NimBLECharacteristicCallbacks {
 	}
 };
 
+class ServerCallbacks : public NimBLEServerCallbacks {
+	void onDisconnect(NimBLEServer* pServer, NimBLEConnInfo& connInfo, int reason) override {
+		// TODO: check if this failed
+		NimBLEDevice::startAdvertising();
+	}
+};
+
 RF24 radio(cePin, csPin);
 NimBLECharacteristic* telemetryChar;
 
@@ -39,6 +46,7 @@ bool initBLE() {
 	//NimBLEDevice::setPower(ESP_PWR_LVL_P9);  // Max power
 
 	NimBLEServer* server = NimBLEDevice::createServer();
+	server->setCallbacks(new ServerCallbacks());
 	NimBLEService* aeroLinkService = server->createService(SERVICE_UUID);
 
 	NimBLECharacteristic* throttleChar = aeroLinkService->createCharacteristic(THROTTLE_CHAR_UUID, NIMBLE_PROPERTY::WRITE_NR);
