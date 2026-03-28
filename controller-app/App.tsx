@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, Pressable, StatusBar } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { AxisPad, AxisPadTouchEvent } from '@fustaro/react-native-axis-pad';
-import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { BLEProvider } from './BLEProvider';
+import JoystickPanel from './JoystickPanel';
 
 export default function App() {
 	return (
@@ -36,35 +35,7 @@ export default function App() {
 					</View>
 				</View>
 
-				<View style={styles.bottomRow}>
-					<GestureHandlerRootView style={styles.noFlex}>
-						<AxisPad id="throttle-pad" size={185} controlSize={70} onTouchEvent={() => 1} disableX={true} resetOnRelease={false} />
-					</GestureHandlerRootView>
-					
-					<View style={styles.middleActionBtns}>
-						<View style={styles.middleActionBtnsRow}>
-							<Pressable style={styles.appButtonContainer}>
-								<Text style={styles.btnText}>HOVER</Text>
-							</Pressable>
-							<Pressable style={styles.appButtonContainer}>
-								<Text style={styles.btnText}>LAND</Text>
-							</Pressable>
-						</View>
-
-						<View style={styles.middleActionBtnsRow}>
-							<Pressable style={styles.appButtonContainer}>
-								<Text style={styles.btnText}>LIGHTS</Text>
-							</Pressable>
-							<Pressable style={styles.appButtonContainer}>
-								<Text style={styles.btnText}>ALT. TARE</Text>
-							</Pressable>
-						</View>
-					</View>
-
-					<GestureHandlerRootView style={styles.noFlex}>
-						<AxisPad id="directional-pad" size={170} controlSize={70} onTouchEvent={() => 1} />
-					</GestureHandlerRootView>
-				</View>
+				<JoystickPanel />
 			</BLEProvider>
 
 		</SafeAreaView>
@@ -72,16 +43,12 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-	noFlex: {
-		flex: 0
-	},
 	container: {
 		flex: 1,
 		//backgroundColor: '#121212',
 		backgroundColor: '#d8d8d8',
 		justifyContent: 'space-between'
 	},
-	// TOP ROW STYLES
 	topRow: {
 		flexDirection: 'row',
 		justifyContent: 'space-between',
@@ -111,27 +78,8 @@ const styles = StyleSheet.create({
 		width: 90,
 		height: 50
 	},
-	// BOTTOM ROW STYLES
-	bottomRow: {
-		flexDirection: 'row',
-		justifyContent: 'space-between',
-		alignItems: 'flex-end',
-		paddingLeft: 25,
-		paddingBottom: 25,
-		paddingRight: 25
-	},
 	menuButton: { width: 30, height: 110, backgroundColor: '#444', borderBottomLeftRadius: 6, borderTopLeftRadius: 6 },
-	middleActionBtns: { flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center', gap: 20 },
-	middleActionBtnsRow: { flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: 20 },
 	btnText: { color: 'white', fontWeight: 'bold', textAlign: 'center', textAlignVertical: 'center', flex: 1 },
-	appButtonContainer: {
-		elevation: 8, // Android shadow
-		backgroundColor: '#007bff',
-		borderRadius: 10,
-		textAlign: 'center',
-		width: 100,
-		height: 60
-	},
 	statusBox: {
 		flexDirection: 'column',
 		alignItems: 'center',

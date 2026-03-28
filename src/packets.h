@@ -3,9 +3,9 @@
 #include <stdint.h>
 
 enum class PacketType : uint8_t {
-	EMPTY,
-	THROTTLE,
-	TELEMETRY
+	EMPTY = 0x01,
+	THROTTLE = 0x02,
+	TELEMETRY = 0x03
 };
 
 struct ThrottlePacket {

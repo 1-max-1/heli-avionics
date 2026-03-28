@@ -4,6 +4,7 @@ import { Buffer } from 'buffer';
 import { PermissionsAndroid, Platform } from 'react-native';
 import InvalidBLEPermissions from "./InvalidBLEPermissions";
 import InvalidDeviceSettings from "./InvalidDeviceSettings";
+import { SerializablePacket } from './packets';
 
 /** Asks user for BLE permissions, returns true if they accept otherwise false. */
 async function requestBLEPermissions() {
@@ -36,9 +37,7 @@ function timeoutPromise(ms: number) {
 
 interface BLEContextType {
 	isConnecting: boolean;
-	//connectToDevice: (deviceId: string) => Promise<void>;
-	//sendData: (serviceUUID: string, charUUID: string, byteArray: number[]) => Promise<void>;
-	//disconnect: () => Promise<void>;
+	sendPacket: (packet: SerializablePacket) => Promise<boolean>;
 }
 
 const BLEContext = createContext<BLEContextType | undefined>(undefined);
@@ -161,6 +160,24 @@ export const BLEProvider = ({ children }: { children: ReactNode }) => {
 		});
 	};
 
+	/**
+	 * Will send packet to the aerolink.
+	 * @returns true if succesful, otherwise false. Nothing special happens if the proider unmounts while the BLE communication is happening. 
+	 */
+	async function sendPacket(packet: SerializablePacket) {
+		let data = Buffer.from(packet.toBuffer()).toString('base64');
+
+		try {
+			await aeroLinkDevice.current?.writeCharacteristicWithoutResponseForService(
+				"aff07927-a273-4b20-bb24-09962b9f950f",
+				"56ce2749-1034-4cc3-8aa5-923399a45243",
+				data);
+			return true;
+		} catch (err) {
+			return false;
+		}
+	}
+
 	/*const sendData = async (serviceUUID: string, charUUID: string, byteArray: number[]) => {
 		if (!connectedDevice) return;
 
@@ -194,14 +211,15 @@ export const BLEProvider = ({ children }: { children: ReactNode }) => {
 
 	return (
 		<BLEContext.Provider value={{
-			isConnecting
+			isConnecting,
+			sendPacket
 		}}>
 			{childElements}
 		</BLEContext.Provider>
 	);
 };
 
-export const useBLE = () => {
+export function useBLE() {
 	const context = useContext(BLEContext);
 	if (!context)
 		throw new Error("useBLE must be used within a BLEProvider");
