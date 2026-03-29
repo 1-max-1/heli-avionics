@@ -1,22 +1,23 @@
 import { StyleSheet, View, Text, Pressable } from 'react-native';
+import { Platform } from 'react-native';
 
 export default function ControlButtonPanel() {
 	return (			
-		<View style={styles.middleActionBtns}>
-			<View style={styles.middleActionBtnsRow}>
-				<Pressable style={styles.appButtonContainer}>
+		<View style={styles.controlButtonsContainer}>
+			<View style={styles.controlButtonsRow}>
+				<Pressable style={styles.controlBtn}>
 					<Text style={styles.btnText}>HOVER</Text>
 				</Pressable>
-				<Pressable style={styles.appButtonContainer}>
+				<Pressable style={styles.controlBtn}>
 					<Text style={styles.btnText}>LAND</Text>
 				</Pressable>
 			</View>
 
-			<View style={styles.middleActionBtnsRow}>
-				<Pressable style={styles.appButtonContainer}>
+			<View style={styles.controlButtonsRow}>
+				<Pressable style={styles.controlBtn}>
 					<Text style={styles.btnText}>LIGHTS</Text>
 				</Pressable>
-				<Pressable style={styles.appButtonContainer}>
+				<Pressable style={styles.controlBtn}>
 					<Text style={styles.btnText}>ALT. TARE</Text>
 				</Pressable>
 			</View>
@@ -25,31 +26,33 @@ export default function ControlButtonPanel() {
 }
 
 const styles = StyleSheet.create({
-	middleActionBtns: {
+	controlButtonsContainer: {
 		flexDirection: 'column',
 		justifyContent: 'flex-end',
 		alignItems: 'center',
 		gap: 20
 	},
-	middleActionBtnsRow: {
+	controlButtonsRow: {
 		flexDirection: 'row',
 		justifyContent: 'center',
 		alignItems: 'center',
 		gap: 20
 	},
 	btnText: {
-		color: 'white',
-		fontWeight: 'bold',
+		color: '#ffffff',
 		textAlign: 'center',
 		textAlignVertical: 'center',
-		flex: 1
+		flex: 1,
+		fontFamily: Platform.select({ android: 'Orbitron_500Medium', ios: 'Orbitron-Medium' })
 	},
-	appButtonContainer: {
+	controlBtn: {
 		elevation: 8, // Android shadow
-		backgroundColor: '#007bff',
+		backgroundColor: '#00000000',
+		borderColor: '#dc0073',
+		borderWidth: 1.5,
 		borderRadius: 10,
 		textAlign: 'center',
-		width: 100,
+		width: 110,
 		height: 60
 	}
 });

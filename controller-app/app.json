@@ -34,7 +34,17 @@
           "neverForLocation": true
         }
       ],
-      "./withShortCmakePath.js"
+      "./withShortCmakePath.js",
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "node_modules/@expo-google-fonts/orbitron/500Medium/Orbitron_500Medium.ttf",
+            "node_modules/@expo-google-fonts/jetbrains-mono/700Bold/JetBrainsMono_700Bold.ttf",
+            "node_modules/@expo-google-fonts/jetbrains-mono/400Regular/JetBrainsMono_400Regular.ttf"
+          ]
+        }
+      ]
     ]
   }
 }

@@ -35,13 +35,13 @@ export default function JoystickPanel() {
 	return (
 		<View style={styles.bottomRow}>
 			<GestureHandlerRootView style={styles.noFlex}>
-				<AxisPad id="throttle-pad" size={185} controlSize={70} onTouchEvent={throttleTouchEvent} disableX={true} resetOnRelease={false} initialY={1} />
+				<AxisPad id="throttle-pad" size={185} controlSize={70} onTouchEvent={throttleTouchEvent} disableX={true} resetOnRelease={false} initialY={1} controlStyle={styles.control} padBackgroundStyle={styles.background} />
 			</GestureHandlerRootView>
 			
 			<ControlButtonPanel />
 
 			<GestureHandlerRootView style={styles.noFlex}>
-				<AxisPad id="directional-pad" size={170} controlSize={70} onTouchEvent={() => 1} />
+				<AxisPad id="directional-pad" size={170} controlSize={70} onTouchEvent={() => 1} controlStyle={styles.control} padBackgroundStyle={styles.background} />
 			</GestureHandlerRootView>
 		</View>
 	);
@@ -58,5 +58,13 @@ const styles = StyleSheet.create({
 		paddingLeft: 25,
 		paddingBottom: 25,
 		paddingRight: 25
+	},
+	control: {
+		backgroundColor: "#50d8d7"
+	},
+	background: {
+		backgroundColor: "#00000000",
+		borderColor: "#eeeeee",
+		borderWidth: 2
 	}
 });
