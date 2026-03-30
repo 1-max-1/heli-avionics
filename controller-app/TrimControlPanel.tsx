@@ -7,6 +7,7 @@ const buttonWidth = 40;
 const contentWidth = 320;
 const totalWidth = contentWidth + buttonWidth;
 
+/** Slide-out drawer for adjusting the helicopter trim settings */
 export default function TrimControlPanel() {
 	const [isOpen, setIsOpen] = useState(false);
 	
@@ -34,6 +35,7 @@ export default function TrimControlPanel() {
 
 	return (
 		<Animated.View style={[styles.drawer, { width: widthAnim }]}>
+			{/* Open/close button */}
 			<Pressable onPress={toggleDrawer} style={styles.button}>
 				<Text style={styles.buttonText}>TRIM</Text>
 				{isOpen ? 

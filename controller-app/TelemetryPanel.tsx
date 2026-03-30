@@ -1,13 +1,25 @@
+import { useState } from 'react';
 import { StyleSheet, View, Text, Pressable } from 'react-native';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import { Platform } from 'react-native';
+import BlurryPopup from './BlurryPopup';
 
+/** Top half of screen, contains telemetry components for displaying information from helicopter. */
 export default function TelemetryPanel() {
+	const [mv, setMv] = useState(false);
+
+	function openUp() {
+		setMv(true);
+	}
+
 	return (
 		<View style={styles.container}>
+			<BlurryPopup closable={true} onCloseRequest={() => {setMv(false);}} visible={mv} popupType="info">
+				<Text style={{color: "white", width: 200, height: 200}}>Hi</Text>
+			</BlurryPopup>
 			<View style={styles.rssiGroup}>
-				<Pressable style={styles.rssiItem}>
+				<Pressable style={styles.rssiItem} onPress={openUp}>
 					<View style={styles.leftBorderLine} />
 					<MaterialCommunityIcons name="antenna" size={22} color="#81e10c" style={{marginLeft: 10 }} />
 					<Text style={styles.rssiBtnText}>-30 dBm</Text>

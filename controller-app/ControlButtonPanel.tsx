@@ -1,6 +1,7 @@
 import { StyleSheet, View, Text, Pressable } from 'react-native';
 import { Platform } from 'react-native';
 
+/** Panel of buttons for heli control commands (hover, auto-land etc.) */
 export default function ControlButtonPanel() {
 	return (			
 		<View style={styles.controlButtonsContainer}>

@@ -5,12 +5,13 @@ import { PermissionsAndroid, Platform } from 'react-native';
 import InvalidBLEPermissions from "./InvalidBLEPermissions";
 import InvalidDeviceSettings from "./InvalidDeviceSettings";
 import { SerializablePacket } from './packets';
+import BlurryPopup from './BlurryPopup';
 
 /** Asks user for BLE permissions, returns true if they accept otherwise false. */
 async function requestBLEPermissions() {
 	if (Platform.OS === 'ios') return true;
 
-	const apiLevel = parseInt(Platform.Version.toString(), 10)
+	const apiLevel = parseInt(Platform.Version.toString(), 10);
 	if (apiLevel >= 31) {
 		// neverForLocation is enabled in manifest so don't need to ask for location on android 12+
 		const result = await PermissionsAndroid.requestMultiple([
@@ -44,14 +45,15 @@ const BLEContext = createContext<BLEContextType | undefined>(undefined);
 
 const manager = new BleManager();
 
-export const BLEProvider = ({ children }: { children: ReactNode }) => {
+/** Context provider which has BLE related methods and events. Also handles permissions. */
+export function BLEProvider({ children }: { children: ReactNode }) {
 	// Should almost always be true anyway, but I like accounting for all edge cases
 	let providerIsMounted = useRef<boolean>(true);
 	let aeroLinkDevice = useRef<Device | null>(null);
 	let disconnectSubscriber = useRef<Subscription | null>(null); // Listens for disconnect events on the aerolink
 
 	const [isConnecting, setIsConnecting] = useState<boolean>(false);
-	const [blePermissionsOK, setblePermissionsOK] = useState<boolean>(false);
+	const [blePermissionsOK, setblePermissionsOK] = useState<boolean>(true);
 	// i.e. if we need bluetooth or location to be turned on
 	const [deviceSettingsOK, setDeviceSettingsOK] = useState<boolean>(true);
 
@@ -200,21 +202,22 @@ export const BLEProvider = ({ children }: { children: ReactNode }) => {
 		}
 	};*/
 
-
-	let childElements;
-	if (!blePermissionsOK)
-		childElements = <InvalidBLEPermissions onRetry={scanAndConnect} />
-	else if (!deviceSettingsOK)
-		childElements = <InvalidDeviceSettings onRetry={scanAndConnect} />
-	else
-		childElements = children;
-
 	return (
 		<BLEContext.Provider value={{
 			isConnecting,
 			sendPacket
 		}}>
-			{childElements}
+
+			{/* Popup telling user to fix permissions or enable bluetooth if disabled */}
+			<BlurryPopup visible={!blePermissionsOK || !deviceSettingsOK} closable={false} popupType="danger" onCloseRequest={() => {}}>
+				{ 
+					!blePermissionsOK ? 
+					<InvalidBLEPermissions onRetry={scanAndConnect} /> :
+					<InvalidDeviceSettings onRetry={scanAndConnect} />
+				}
+			</BlurryPopup>
+
+			{children}
 		</BLEContext.Provider>
 	);
 };

@@ -9,40 +9,58 @@ export const openSetting = (type: 'bluetooth' | 'location') => {
   	}
 };
 
+/** Intended for use in a BlurryPopup. Child content for telling the user to enable bluetooth/location. */
 export default function InvalidDeviceSettings({onRetry} : {onRetry: () => void}) {
 	return (
 		<View style={styles.container}>
-			<Text style={styles.heading}>Please turn bluetooth and location on</Text>
-			<Pressable style={styles.actionButton} onPress={onRetry}><Text style={styles.buttonText}>Retry</Text></Pressable>
-			<Pressable style={styles.actionButton} onPress={() => openSetting("bluetooth")}><Text style={styles.buttonText}>Bluetooth settings</Text></Pressable>
-			<Pressable style={styles.actionButton} onPress={() => openSetting("location")}><Text style={styles.buttonText}>Location settings</Text></Pressable>
+			<Text style={styles.heading}>Please enable bluetooth{'\n'}and location services</Text>
+			<View style={styles.buttonContainer}>
+				<Pressable style={styles.actionButton} onPress={onRetry}>
+					<Text style={styles.buttonText}>Retry</Text>
+				</Pressable>
+				<Pressable style={styles.actionButton} onPress={() => openSetting("bluetooth")}>
+					<Text style={styles.buttonText}>Bluetooth settings</Text>
+				</Pressable>
+				<Pressable style={styles.actionButton} onPress={() => openSetting("location")}>
+					<Text style={styles.buttonText}>Location settings</Text>
+				</Pressable>
+			</View>
 		</View>
 	);
 }
 
 const styles = StyleSheet.create({
 	container: {
-		flex: 1,
-		flexDirection: "column",
-		backgroundColor: '#fff',
-		alignItems: 'center',
-		justifyContent: "center",
-		gap: 15
+		width: 350,
+		height: 200,
+		alignItems: "center",
+		justifyContent: "space-between",
+		paddingBottom: 30
 	},
 	heading: {
-		fontSize: 25
+		fontSize: 20,
+		color: "#f5b700",
+		fontFamily: Platform.select({ android: 'Orbitron_500Medium', ios: 'Orbitron-Medium' }),
+		textAlign: "left",
+		width: "100%"
+	},
+	buttonContainer: {
+		flexDirection: "row",
+		gap: 15
 	},
 	actionButton: {
+		backgroundColor: '#00000000',
+		borderColor: '#dc0073',
+		borderWidth: 1.5,
+		borderRadius: 10,
 		width: 100,
-		height: 50,
-		backgroundColor: "#007bff",
-		flexDirection: "row",
-		justifyContent: "center",
-		alignItems: "center",
-		borderRadius: 5
+		height: 60,
+		justifyContent: "center"
 	},
 	buttonText: {
-		color: "#ffaa00",
-		textAlign: "center"
+		color: "#fff",
+		textAlign: "center",
+		fontSize: 14,
+		fontFamily: Platform.select({ android: 'Orbitron_500Medium', ios: 'Orbitron-Medium' })
 	}
 });

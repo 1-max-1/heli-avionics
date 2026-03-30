@@ -6,7 +6,9 @@ import ControlButtonPanel from './ControlButtonPanel';
 import { ThrottlePacket } from './packets';
 import { useBLE } from './BLEProvider';
 
+/** Bottom half of screen, contains components for controlling the helicopter. */
 export default function JoystickPanel() {
+	// Interval for sending joystick info to the helicopter
 	let dataInterval = useRef<NodeJS.Timeout | undefined>(undefined);
 	let verticalThrottle = useRef(1);
 	let { sendPacket } = useBLE();
@@ -20,8 +22,7 @@ export default function JoystickPanel() {
 	}, []);
 
 	async function sendData() {
-		//console.log("Sending data now");
-		console.log(`y: ${verticalThrottle.current}`);
+		//console.log(`y: ${verticalThrottle.current}`);
 		let packet = new ThrottlePacket(verticalThrottle.current);
 		let result = await sendPacket(packet);
 	}
