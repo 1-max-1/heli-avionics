@@ -1,5 +1,6 @@
 # heli-avionics
-This repository contains the electronics and software for a flight controller. This controller is designed to run a coaxial helicopter using brushed DC motors. The board contains an rf transciever chip for wireless communication with a remote.
+This repository contains the electronics and software for a rc-helicopter control system. This includes an onboard flight computer and a mobile application for remote control.
+The PCB is designed to drive coaxial blades using brushed DC motors. It also contains an rf transciever chip for wireless communication and a pressure sensor for altitude measurement.
 
 I had to learn alot for this project, as there were several things I had no experience with such as the radio transceiver circuitry. In the end, it turned out well and was very fun to make.
 
@@ -8,24 +9,24 @@ I had to learn alot for this project, as there were several things I had no expe
 <img src="https://github.com/user-attachments/assets/528543c5-ad05-44f8-a49a-dd642d59fcf7" alt="Description" width="70%">
 
 # PCBWay
-The PCB was fabricated and assembled by [PCBWay](https://www.pcbway.com/). I’m impressed with how it turned out, and I’ve written a short review below based on my experience working with them.
+The PCB fabrication and assembly was sponsored by [PCBWay](https://www.pcbway.com/). I’m pleased with how it turned out, and I’ve written a short review below based on my experience working with them.
 
 #### PCB Quality
-The finished PCB looks and feels excellent. The boards appear durable and well-made, with solid electrical connectivity throughout. Silkscreen print is sharp and clear, and the overall finish gives off a professional feel.
+The boards appear durable and well-made, with solid electrical connectivity. Silkscreen print is sharp and the overall finish gives off a professional feel.
 
 #### Assembly Quality
-Assembly was just as good. All components were placed with precision, aligned nicely with their pads, and the soldering was clean — no excess, no bridges, and everything stayed neatly within the boundaries.
+Assembly was just as good. All components were placed with precision and the soldering was clean. There were no bridges, no excess, and everything stayed neatly within the boundaries.
 
 #### Communication & Support
 Working with PCBWay was a smooth experience. They were professional and quick to respond to any questions I had. One thing I really appreciated was their communication before making any key decisions. For example:
-- They double-checked with me before sourcing alternative components.
 - When a part was unavailable, they suggested alternatives instead of just swapping it.
-- After assembly, the quality control team contacted me about the orientation of a particular component, just to be sure, as the markings were slightly ambiguous.
+- They double-checked with me before sourcing alternative components.
+- After assembly, the team contacted me about the orientation of a particular component as the markings were slightly ambiguous.
 
 #### Pricing & Turnaround
-Pricing was fair, especially considering the quality and the support included. Quoting and sourcing components was made easy — PCBWay handled that for me, which saved a lot of time. Once everything was confirmed, shipping was fast and the boards arrived well-packed.
+Pricing was fair, considering the quality and the support included. Quoting and sourcing components was made easy — PCBWay handled that for me, which saved a lot of time. Shipping was fast and the boards arrived well-packed.
 
-Overall, I'm happy with the result and wouldn’t hesitate to use PCBWay again in future projects. If you’re looking for a PCB manufacturer that’s reliable, responsive, and produces high-quality results — they’re worth checking out.
+Overall, I'm happy with the result and wouldn’t hesitate to use PCBWay again in future projects. If you’re looking for a PCB manufacturer that’s reliable, responsive, and produces high-quality results, they’re worth checking out.
 
 # Electronics
 **Motor drivers**
@@ -61,10 +62,27 @@ The board includes a `BMP390` pressure sensor which can be used to determine the
 # Software
 TODO
 
-Will use platformIO, c++
+Using platformIO, c++
+
+### AeroLink
+IN PROGRESS
+
+This is a small esp32-based device which is placed near the user when flying the helicopter.
+It acts as a bridge between the flight computer and the mobile application.
+BLE messages are processed and sent over a long range nrf24 link, and vice versa.
+
+# Controller app
+IN PROGRESS
+
+This is a [React Native](https://reactnative.dev/) mobile application for control of the helicopter.
+It includes throttle and directional controls, trim adjustment, buttons for extra features (e.g. auto landing), telemetry display and signal strength indication.
+The app automatically connects to the AeroLink and communicates with it.
+
+<img width="50%" alt="controller-app" src="https://github.com/user-attachments/assets/0a143e04-c6b2-41fc-b6b2-261f24719a83" />
+
 
 # Why?
-I found this helicopter in an e-waste center. The remote was missing and the electronics inside of it seemed to be slightly burnt. 
+I found this helicopter in an e-waste center. The remote was missing and some of the electronics seemed to be burnt. 
 
 | <img src="https://github.com/user-attachments/assets/891b460c-87d6-47ac-b79f-f41f9f45c5fe" alt="Description" width="70%"> | 
 |:--:| 
